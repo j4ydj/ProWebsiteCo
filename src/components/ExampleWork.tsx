@@ -1,0 +1,75 @@
+import { Button } from "@/components/ui/button";
+import { ExternalLink } from "lucide-react";
+import exampleImage from "@/assets/example-websites.jpg";
+
+const examples = [
+  { trade: "Plumber", location: "Manchester", highlight: "Emergency callouts increased 60%" },
+  { trade: "Electrician", location: "Birmingham", highlight: "Booked solid for 3 months ahead" },
+  { trade: "Builder", location: "London", highlight: "Won £50k extension project" },
+  { trade: "Gardener", location: "Leeds", highlight: "Doubled weekly maintenance clients" },
+  { trade: "Decorator", location: "Bristol", highlight: "Premium quotes accepted 80% more" },
+  { trade: "Carpenter", location: "Liverpool", highlight: "Kitchen fitting enquiries up 150%" }
+];
+
+const ExampleWork = () => {
+  return (
+    <section className="py-20 bg-muted/30">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            Real Websites for Real Trades
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+            Every website we create is designed from scratch for each client. 
+            Here's what's possible when your trade gets the custom treatment it deserves.
+          </p>
+          <div className="inline-flex items-center px-4 py-2 bg-accent/10 rounded-full text-accent font-medium">
+            All examples shown are unique, tailored designs — no templates used
+          </div>
+        </div>
+
+        <div className="relative mb-12">
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl blur-2xl"></div>
+          <img 
+            src={exampleImage}
+            alt="Collection of custom tradesperson websites"
+            className="relative w-full rounded-xl shadow-elegant"
+          />
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          {examples.map((example, index) => (
+            <div 
+              key={index}
+              className="bg-card rounded-lg p-6 shadow-card hover:shadow-elegant transition-all duration-300 border border-border group"
+            >
+              <div className="flex items-center justify-between mb-3">
+                <h3 className="font-semibold text-lg text-card-foreground">
+                  {example.trade}
+                </h3>
+                <span className="text-sm text-muted-foreground bg-muted px-2 py-1 rounded">
+                  {example.location}
+                </span>
+              </div>
+              <p className="text-accent font-medium mb-3">
+                {example.highlight}
+              </p>
+              <div className="flex items-center text-sm text-muted-foreground">
+                <ExternalLink className="w-4 h-4 mr-2" />
+                Custom design & branding
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center">
+          <Button variant="hero" size="lg">
+            See All Our Work
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ExampleWork;
