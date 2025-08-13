@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, PlayCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-websites.jpg";
 
 const Hero = () => {
@@ -22,10 +23,12 @@ const Hero = () => {
                 Get My Website
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="outline" size="xl" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
-                <PlayCircle className="mr-2" />
-                See Our Work
-              </Button>
+              <Link to="/portfolio">
+                <Button variant="outline" size="xl" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
+                  <PlayCircle className="mr-2" />
+                  See Our Work
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="relative">

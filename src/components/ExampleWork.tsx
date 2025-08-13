@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 import exampleImage from "@/assets/example-websites.jpg";
 
 const examples = [
@@ -63,9 +64,11 @@ const ExampleWork = () => {
         </div>
 
         <div className="text-center">
-          <Button variant="hero" size="lg">
-            See All Our Work
-          </Button>
+          <Link to="/portfolio">
+            <Button variant="hero" size="lg">
+              See All Our Work
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

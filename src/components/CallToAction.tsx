@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, MessageCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CallToAction = () => {
   return (
@@ -19,9 +20,11 @@ const CallToAction = () => {
             Get My Website Now
             <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
-          <Button variant="outline" size="xl" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
-            See Our Portfolio
-          </Button>
+          <Link to="/portfolio">
+            <Button variant="outline" size="xl" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
+              See Our Portfolio
+            </Button>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
