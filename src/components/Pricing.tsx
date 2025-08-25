@@ -42,11 +42,11 @@ const Pricing = () => {
                 <div>
                   <div className="mb-8">
                     <div className="flex items-baseline mb-4">
-                      <span className="text-5xl font-bold text-foreground">£349</span>
+                      <span className="text-5xl font-bold text-foreground">£549</span>
                       <span className="text-xl text-muted-foreground ml-2">one-time setup</span>
                     </div>
                     <div className="flex items-baseline">
-                      <span className="text-3xl font-bold text-accent">£14.99</span>
+                      <span className="text-3xl font-bold text-accent">£19.99</span>
                       <span className="text-lg text-muted-foreground ml-2">/month</span>
                     </div>
                     <p className="text-muted-foreground mt-4">

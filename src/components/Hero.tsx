@@ -11,22 +11,22 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Your Trade, Your Website —{" "}
-              <span className="text-accent">Built to Win You More Work</span>
+              Professional websites for trades in the UK —{" "}
+              <span className="text-accent">£549 setup + £19.99/month</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
-              Custom-designed, mobile-friendly websites for tradespeople across the UK. 
-              Ready to bring you more enquiries in as little as 48 hours.
+              Custom-designed, mobile-friendly websites that bring you more enquiries. 
+              Get your professional online presence in just 48 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button variant="accent" size="xl" className="group">
-                Get My Website
+                See Your Demo Website
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Link to="/portfolio">
                 <Button variant="outline" size="xl" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
                   <PlayCircle className="mr-2" />
-                  See Our Work
+                  View Live Examples
                 </Button>
               </Link>
             </div>

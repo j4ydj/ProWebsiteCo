@@ -37,9 +37,16 @@ const CallToAction = () => {
           
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
             <MessageCircle className="w-8 h-8 text-accent mx-auto mb-4" />
-            <h3 className="text-lg font-semibold text-white mb-2">Live Chat</h3>
-            <p className="text-white/80 text-sm">Get instant answers</p>
-            <p className="text-accent font-medium mt-2">Available 9am-6pm</p>
+            <h3 className="text-lg font-semibold text-white mb-2">WhatsApp</h3>
+            <p className="text-white/80 text-sm">Quick message us</p>
+            <a 
+              href="https://wa.me/447123456789" 
+              className="text-accent font-medium mt-2 inline-block hover:underline"
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Start chat
+            </a>
           </div>
           
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
