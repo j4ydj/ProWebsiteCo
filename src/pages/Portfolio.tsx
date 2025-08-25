@@ -73,7 +73,8 @@ const portfolioItems = [
     description: "Complete roofing solutions with drone surveys",
     features: ["Drone inspection booking", "Material calculator", "Weather alerts"],
     result: "Insurance work up 200%", 
-    testimonial: "Professional site helps win insurance contracts"
+    testimonial: "Professional site helps win insurance contracts",
+    liveUrl: "https://peak-roofing-pros.lovable.app"
   },
   {
     trade: "Plasterer",
