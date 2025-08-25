@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const CallToAction = () => {
   return (
-    <section className="py-20 bg-gradient-hero relative overflow-hidden">
+    <section id="contact" className="py-20 bg-gradient-hero relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/70 to-accent/80"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
@@ -16,10 +16,12 @@ const CallToAction = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <Button variant="accent" size="xl" className="group">
-            Get My Website Now
-            <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          <a href="#contact" className="group">
+            <Button variant="accent" size="xl" className="w-full">
+              Get My Website Now
+              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </a>
           <Link to="/portfolio">
             <Button variant="outline" size="xl" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
               See Our Portfolio

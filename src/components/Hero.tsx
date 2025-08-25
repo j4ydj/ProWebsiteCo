@@ -20,10 +20,12 @@ const Hero = () => {
               Get your professional online presence in just 48 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="accent" size="xl" className="group">
-                See Your Demo Website
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <a href="#contact" className="group">
+                <Button variant="accent" size="xl" className="w-full">
+                  See Your Demo Website
+                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </a>
               <Link to="/portfolio">
                 <Button variant="outline" size="xl" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
                   <PlayCircle className="mr-2" />
