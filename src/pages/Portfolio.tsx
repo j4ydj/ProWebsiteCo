@@ -12,7 +12,8 @@ const portfolioItems = [
     description: "24/7 emergency plumbing services with instant booking system",
     features: ["Online booking", "Emergency callouts", "Price calculator"],
     result: "60% increase in emergency calls",
-    testimonial: "Phone hasn't stopped ringing since the site went live!"
+    testimonial: "Phone hasn't stopped ringing since the site went live!",
+    liveUrl: "https://clearflow-plumbing-site.lovable.app"
   },
   {
     trade: "Electrician", 

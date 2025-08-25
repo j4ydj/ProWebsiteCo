@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import exampleImage from "@/assets/example-websites.jpg";
 
 const examples = [
-  { trade: "Plumber", location: "Manchester", highlight: "Emergency callouts increased 60%" },
+  { trade: "Plumber", location: "Manchester", highlight: "Emergency callouts increased 60%", liveUrl: "https://clearflow-plumbing-site.lovable.app" },
   { trade: "Electrician", location: "Birmingham", highlight: "Booked solid for 3 months ahead" },
   { trade: "Builder", location: "London", highlight: "Won £50k extension project", liveUrl: "https://solidbuild-built-to-last.lovable.app" },
   { trade: "Gardener", location: "UK", highlight: "Professional online presence live", liveUrl: "https://garden-pride-site.lovable.app" },
