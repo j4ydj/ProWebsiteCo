@@ -109,6 +109,17 @@ const portfolioItems = [
     result: "Bookings increased 180%",
     testimonial: "Customer inquiries tripled since launch",
     liveUrl: "https://freshstart-sparkle.lovable.app"
+  },
+  {
+    trade: "Window Cleaner",
+    name: "Crystal View",
+    location: "Manchester",
+    image: exampleImage,
+    description: "Professional window cleaning for homes and businesses",
+    features: ["Scheduled services", "Before/after photos", "Insurance coverage"],
+    result: "Regular clients up 200%",
+    testimonial: "Bookings through the roof since going online",
+    liveUrl: "https://crystalview-shine.lovable.app"
   }
 ];
 
