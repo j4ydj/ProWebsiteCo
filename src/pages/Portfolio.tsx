@@ -23,7 +23,8 @@ const portfolioItems = [
     description: "Family electrical business specializing in home rewiring",
     features: ["Safety certificates", "Project gallery", "Free quotes"],
     result: "Booked solid for 3 months",
-    testimonial: "Professional look gives customers real confidence"
+    testimonial: "Professional look gives customers real confidence",
+    liveUrl: "https://sparkright-safe-electrics.lovable.app"
   },
   {
     trade: "Builder",
@@ -46,26 +47,6 @@ const portfolioItems = [
     result: "Live working website",
     testimonial: "Professional online presence that converts visitors to customers",
     liveUrl: "https://garden-pride-site.lovable.app"
-  },
-  {
-    trade: "Decorator",
-    name: "Prestige Painting",
-    location: "Bristol",
-    image: exampleImage, 
-    description: "High-end interior and exterior painting",
-    features: ["Color visualizer", "Premium finishes showcase", "Room transformations"],
-    result: "Premium quotes up 80%",
-    testimonial: "Now attracting much higher-paying customers"
-  },
-  {
-    trade: "Carpenter",
-    name: "Craftsman Joinery",
-    location: "Liverpool",
-    image: exampleImage,
-    description: "Bespoke furniture and fitted kitchen specialist", 
-    features: ["Custom design tool", "Wood species guide", "Installation videos"],
-    result: "Kitchen enquiries up 150%",
-    testimonial: "Website showcases my craftsmanship perfectly"
   },
   {
     trade: "Roofer",

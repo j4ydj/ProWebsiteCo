@@ -5,12 +5,10 @@ import exampleImage from "@/assets/example-websites.jpg";
 
 const examples = [
   { trade: "Plumber", location: "Manchester", highlight: "Emergency callouts increased 60%", liveUrl: "https://clearflow-plumbing-site.lovable.app" },
-  { trade: "Electrician", location: "Birmingham", highlight: "Booked solid for 3 months ahead" },
+  { trade: "Electrician", location: "Birmingham", highlight: "Booked solid for 3 months ahead", liveUrl: "https://sparkright-safe-electrics.lovable.app" },
   { trade: "Builder", location: "London", highlight: "Won £50k extension project", liveUrl: "https://solidbuild-built-to-last.lovable.app" },
   { trade: "Gardener", location: "UK", highlight: "Professional online presence live", liveUrl: "https://garden-pride-site.lovable.app" },
   { trade: "Driveway Specialist", location: "Midlands", highlight: "Premium projects up 140%", liveUrl: "https://solidpath-driveway-solutions.lovable.app" },
-  { trade: "Decorator", location: "Bristol", highlight: "Premium quotes accepted 80% more" },
-  { trade: "Carpenter", location: "Liverpool", highlight: "Kitchen fitting enquiries up 150%" },
   { trade: "Roofer", location: "Sheffield", highlight: "Insurance work up 200%", liveUrl: "https://peak-roofing-pros.lovable.app" },
   { trade: "Plasterer", location: "Newcastle", highlight: "Premium jobs increased 90%", liveUrl: "https://smooth-finish-pro.lovable.app" },
   { trade: "Tiler", location: "Cardiff", highlight: "Bathroom projects up 120%", liveUrl: "https://precision-tile-pros.lovable.app" },
