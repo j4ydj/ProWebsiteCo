@@ -96,7 +96,8 @@ const portfolioItems = [
     description: "Luxury bathroom and kitchen tiling specialist",
     features: ["Pattern visualizer", "Grout color matcher", "Maintenance guides"],
     result: "Bathroom projects up 120%",
-    testimonial: "Tool helps customers visualize their dream bathroom"
+    testimonial: "Tool helps customers visualize their dream bathroom",
+    liveUrl: "https://precision-tile-pros.lovable.app"
   }
 ];
 

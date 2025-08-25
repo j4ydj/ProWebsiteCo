@@ -6,10 +6,13 @@ import exampleImage from "@/assets/example-websites.jpg";
 const examples = [
   { trade: "Plumber", location: "Manchester", highlight: "Emergency callouts increased 60%" },
   { trade: "Electrician", location: "Birmingham", highlight: "Booked solid for 3 months ahead" },
-  { trade: "Builder", location: "London", highlight: "Won £50k extension project" },
-  { trade: "Gardener", location: "Leeds", highlight: "Doubled weekly maintenance clients" },
+  { trade: "Builder", location: "London", highlight: "Won £50k extension project", liveUrl: "https://solidbuild-built-to-last.lovable.app" },
+  { trade: "Gardener", location: "UK", highlight: "Professional online presence live", liveUrl: "https://garden-pride-site.lovable.app" },
   { trade: "Decorator", location: "Bristol", highlight: "Premium quotes accepted 80% more" },
-  { trade: "Carpenter", location: "Liverpool", highlight: "Kitchen fitting enquiries up 150%" }
+  { trade: "Carpenter", location: "Liverpool", highlight: "Kitchen fitting enquiries up 150%" },
+  { trade: "Roofer", location: "Sheffield", highlight: "Insurance work up 200%", liveUrl: "https://peak-roofing-pros.lovable.app" },
+  { trade: "Plasterer", location: "Newcastle", highlight: "Premium jobs increased 90%", liveUrl: "https://smooth-finish-pro.lovable.app" },
+  { trade: "Tiler", location: "Cardiff", highlight: "Bathroom projects up 120%", liveUrl: "https://precision-tile-pros.lovable.app" }
 ];
 
 const ExampleWork = () => {
@@ -52,12 +55,25 @@ const ExampleWork = () => {
                   {example.location}
                 </span>
               </div>
-              <p className="text-accent font-medium mb-3">
+              <p className="text-accent font-medium mb-4">
                 {example.highlight}
               </p>
-              <div className="flex items-center text-sm text-muted-foreground">
-                <ExternalLink className="w-4 h-4 mr-2" />
-                Custom design & branding
+              <div className="flex items-center justify-between">
+                <div className="flex items-center text-sm text-muted-foreground">
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  Custom design & branding
+                </div>
+                {example.liveUrl && (
+                  <a
+                    href={example.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-3 py-1.5 bg-accent text-accent-foreground rounded-md hover:bg-accent/90 transition-colors text-sm font-medium"
+                  >
+                    <ExternalLink className="w-3 h-3 mr-1" />
+                    Live Demo
+                  </a>
+                )}
               </div>
             </div>
           ))}
