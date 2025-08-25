@@ -56,10 +56,12 @@ const Pricing = () => {
                   </div>
 
                   <div className="space-y-4">
-                    <Button variant="cta" size="xl" className="w-full group">
-                      Get Started Now
-                      <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-                    </Button>
+                    <a href="#contact">
+                      <Button variant="cta" size="xl" className="w-full group">
+                        Get Started Now
+                        <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+                      </Button>
+                    </a>
                     <p className="text-center text-sm text-muted-foreground">
                       💳 Pay setup fee only after you approve the design
                     </p>

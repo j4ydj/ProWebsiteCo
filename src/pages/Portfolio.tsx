@@ -237,9 +237,11 @@ const Portfolio = () => {
               create something equally impressive for your trade.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="cta" size="lg">
-                Get My Custom Website
-              </Button>
+              <a href="#contact">
+                <Button variant="cta" size="lg">
+                  Get My Custom Website
+                </Button>
+              </a>
               <Link to="/">
                 <Button variant="outline" size="lg">
                   Learn More About Our Process

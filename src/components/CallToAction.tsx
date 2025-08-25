@@ -51,12 +51,12 @@ const CallToAction = () => {
             </a>
           </div>
           
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+          <a href="#contact" className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-colors">
             <ArrowRight className="w-8 h-8 text-accent mx-auto mb-4" />
             <h3 className="text-lg font-semibold text-white mb-2">Get Started</h3>
             <p className="text-white/80 text-sm">Free consultation</p>
             <p className="text-accent font-medium mt-2">No commitment</p>
-          </div>
+          </a>
         </div>
 
         <div className="mt-12 text-center">
