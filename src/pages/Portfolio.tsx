@@ -32,7 +32,8 @@ const portfolioItems = [
     description: "Luxury home extensions and renovations",
     features: ["3D project visualizer", "Planning permission help", "Timeline tracker"],
     result: "Won £50k extension project",
-    testimonial: "Website helped me land the biggest job of my career"
+    testimonial: "Website helped me land the biggest job of my career",
+    liveUrl: "https://solidbuild-built-to-last.lovable.app"
   },
   {
     trade: "Gardener",
@@ -84,7 +85,8 @@ const portfolioItems = [
     description: "Specialist plastering and rendering services",
     features: ["Finish gallery", "Technique explanations", "Project timeline"],
     result: "Premium jobs increased 90%",
-    testimonial: "Customers appreciate the detailed explanations"
+    testimonial: "Customers appreciate the detailed explanations",
+    liveUrl: "https://smooth-finish-pro.lovable.app"
   },
   {
     trade: "Tiler", 
