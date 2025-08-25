@@ -12,7 +12,8 @@ const Hero = () => {
           <div className="text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               Professional websites for trades in the UK —{" "}
-              <span className="text-accent">£549 setup + £19.99/month</span>
+              <span className="text-accent">£549 setup</span>{" "}
+              <span className="text-2xl md:text-3xl lg:text-4xl text-accent/90">+ £19.99/month</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
               Custom-designed, mobile-friendly websites that bring you more enquiries. 
