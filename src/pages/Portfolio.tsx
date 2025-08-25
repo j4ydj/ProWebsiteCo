@@ -112,6 +112,17 @@ const portfolioItems = [
     liveUrl: "https://freshstart-sparkle.lovable.app"
   },
   {
+    trade: "Driveway Specialist",
+    name: "SolidPath Solutions", 
+    location: "Midlands",
+    image: exampleImage,
+    description: "Professional driveway and patio installation with premium materials",
+    features: ["Material calculator", "Design visualizer", "Maintenance guides"],
+    result: "Premium projects up 140%",
+    testimonial: "Website quality matches our craftsmanship - premium clients love it",
+    liveUrl: "https://solidpath-driveway-solutions.lovable.app"
+  },
+  {
     trade: "Window Cleaner",
     name: "Crystal View",
     location: "Manchester",

@@ -8,6 +8,7 @@ const examples = [
   { trade: "Electrician", location: "Birmingham", highlight: "Booked solid for 3 months ahead" },
   { trade: "Builder", location: "London", highlight: "Won £50k extension project", liveUrl: "https://solidbuild-built-to-last.lovable.app" },
   { trade: "Gardener", location: "UK", highlight: "Professional online presence live", liveUrl: "https://garden-pride-site.lovable.app" },
+  { trade: "Driveway Specialist", location: "Midlands", highlight: "Premium projects up 140%", liveUrl: "https://solidpath-driveway-solutions.lovable.app" },
   { trade: "Decorator", location: "Bristol", highlight: "Premium quotes accepted 80% more" },
   { trade: "Carpenter", location: "Liverpool", highlight: "Kitchen fitting enquiries up 150%" },
   { trade: "Roofer", location: "Sheffield", highlight: "Insurance work up 200%", liveUrl: "https://peak-roofing-pros.lovable.app" },
