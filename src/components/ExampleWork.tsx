@@ -12,7 +12,8 @@ const examples = [
   { trade: "Carpenter", location: "Liverpool", highlight: "Kitchen fitting enquiries up 150%" },
   { trade: "Roofer", location: "Sheffield", highlight: "Insurance work up 200%", liveUrl: "https://peak-roofing-pros.lovable.app" },
   { trade: "Plasterer", location: "Newcastle", highlight: "Premium jobs increased 90%", liveUrl: "https://smooth-finish-pro.lovable.app" },
-  { trade: "Tiler", location: "Cardiff", highlight: "Bathroom projects up 120%", liveUrl: "https://precision-tile-pros.lovable.app" }
+  { trade: "Tiler", location: "Cardiff", highlight: "Bathroom projects up 120%", liveUrl: "https://precision-tile-pros.lovable.app" },
+  { trade: "Cleaning Service", location: "London", highlight: "Bookings increased 180%", liveUrl: "https://freshstart-sparkle.lovable.app" }
 ];
 
 const ExampleWork = () => {

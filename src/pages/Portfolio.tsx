@@ -98,6 +98,17 @@ const portfolioItems = [
     result: "Bathroom projects up 120%",
     testimonial: "Tool helps customers visualize their dream bathroom",
     liveUrl: "https://precision-tile-pros.lovable.app"
+  },
+  {
+    trade: "Cleaning Service",
+    name: "Fresh Start Cleaning",
+    location: "London",
+    image: exampleImage,
+    description: "Professional residential and commercial cleaning services",
+    features: ["Online booking system", "Eco-friendly options", "Regular maintenance plans"],
+    result: "Bookings increased 180%",
+    testimonial: "Customer inquiries tripled since launch",
+    liveUrl: "https://freshstart-sparkle.lovable.app"
   }
 ];
 
