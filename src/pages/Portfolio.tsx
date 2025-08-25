@@ -36,13 +36,14 @@ const portfolioItems = [
   },
   {
     trade: "Gardener",
-    name: "Eden Landscapes", 
-    location: "Leeds",
+    name: "Garden Pride", 
+    location: "UK",
     image: exampleImage,
-    description: "Complete garden design and maintenance services",
-    features: ["Seasonal care plans", "Before/after gallery", "Plant care guides"],
-    result: "Doubled weekly clients",
-    testimonial: "Customers love the professional image it gives me"
+    description: "Professional garden design and maintenance services",
+    features: ["Online booking system", "Service showcase", "Professional portfolio"],
+    result: "Live working website",
+    testimonial: "Professional online presence that converts visitors to customers",
+    liveUrl: "https://garden-pride-site.lovable.app"
   },
   {
     trade: "Decorator",
@@ -188,9 +189,20 @@ const Portfolio = () => {
                         <Star className="w-4 h-4 fill-current" />
                       </div>
                     </div>
-                    <blockquote className="text-sm text-muted-foreground italic">
+                    <blockquote className="text-sm text-muted-foreground italic mb-4">
                       "{item.testimonial}"
                     </blockquote>
+                    {item.liveUrl && (
+                      <a
+                        href={item.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-accent text-accent-foreground rounded-lg hover:bg-accent/90 transition-colors text-sm font-medium"
+                      >
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        View Live Demo
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
