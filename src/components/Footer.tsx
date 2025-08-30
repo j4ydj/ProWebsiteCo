@@ -11,7 +11,7 @@ const Footer = () => {
               <div className="bg-gradient-accent rounded-lg p-2 mr-3">
                 <Hammer className="w-6 h-6 text-accent-foreground" />
               </div>
-              <span className="text-2xl font-bold">TradeSite Pro</span>
+              <span className="text-2xl font-bold">Pro Website Co</span>
             </div>
             <p className="text-background/80 mb-6 max-w-md">
               Custom-designed websites for UK tradespeople. We create unique, 
@@ -24,7 +24,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <Mail className="w-5 h-5 mr-3 text-accent" />
-                <span>hello@tradesitepro.co.uk</span>
+                <span>hello@prowebsiteco.com</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="w-5 h-5 mr-3 text-accent" />
@@ -63,7 +63,7 @@ const Footer = () => {
 
         <div className="border-t border-background/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-background/60 text-sm mb-4 md:mb-0">
-            © 2024 TradeSite Pro. All rights reserved.
+            © 2024 Pro Website Co. All rights reserved.
           </div>
           <div className="flex space-x-6 text-sm text-background/80">
             <a href="#" className="hover:text-accent transition-colors">Privacy Policy</a>

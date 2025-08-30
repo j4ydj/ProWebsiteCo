@@ -13,7 +13,7 @@ const testimonials = [
     name: "Sarah Jenkins", 
     trade: "Decorator",
     location: "Bristol",
-    text: "I was sceptical about websites, but TradeSite Pro made it so easy. Now customers can see my work properly and I'm getting much better paying jobs.",
+    text: "I was sceptical about websites, but Pro Website Co made it so easy. Now customers can see my work properly and I'm getting much better paying jobs.",
     rating: 5,
     result: "Premium quotes up 80%"
   },

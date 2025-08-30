@@ -33,7 +33,7 @@ const About = () => {
             </h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                We started TradeSite Pro because we saw too many skilled tradespeople 
+                We started Pro Website Co because we saw too many skilled tradespeople 
                 struggling with generic, template-based websites that didn't represent 
                 the quality of their work.
               </p>
