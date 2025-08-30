@@ -1,4 +1,5 @@
-import { Hammer, Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
+import proWebsiteCoLogo from "@/assets/prowebsiteco-logo.png";
 
 const Footer = () => {
   return (
@@ -8,10 +9,11 @@ const Footer = () => {
           {/* Logo and Company Info */}
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
-              <div className="bg-gradient-accent rounded-lg p-2 mr-3">
-                <Hammer className="w-6 h-6 text-accent-foreground" />
-              </div>
-              <span className="text-2xl font-bold">Pro Website Co</span>
+              <img 
+                src={proWebsiteCoLogo} 
+                alt="Pro Website Co" 
+                className="h-8 mr-3"
+              />
             </div>
             <p className="text-background/80 mb-6 max-w-md">
               Custom-designed websites for UK tradespeople. We create unique, 
