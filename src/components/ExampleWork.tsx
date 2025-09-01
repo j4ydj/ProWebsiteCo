@@ -67,15 +67,6 @@ const ExampleWork = () => {
           </div>
         </div>
 
-        <div className="relative mb-12">
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl blur-2xl"></div>
-            <img 
-              src={exampleImage}
-              alt="Collection of custom-designed websites for UK tradespeople including plumbers, electricians, builders, and gardeners - showing mobile-responsive layouts with professional branding, contact forms, and image galleries"
-              className="relative w-full rounded-xl shadow-elegant"
-              loading="lazy"
-            />
-        </div>
 
         <div className="space-y-8 mb-12">
           {examples.map((example, index) => (
