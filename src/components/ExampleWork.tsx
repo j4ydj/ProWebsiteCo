@@ -18,7 +18,7 @@ const examples = [
 
 const ExampleWork = () => {
   return (
-    <section className="py-20 bg-muted/30">
+    <section id="examples" className="py-20 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -35,11 +35,12 @@ const ExampleWork = () => {
 
         <div className="relative mb-12">
           <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl blur-2xl"></div>
-          <img 
-            src={exampleImage}
-            alt="Collection of custom tradesperson websites"
-            className="relative w-full rounded-xl shadow-elegant"
-          />
+            <img 
+              src={exampleImage}
+              alt="Collection of custom-designed websites for UK tradespeople including plumbers, electricians, builders, and gardeners - showing mobile-responsive layouts with professional branding, contact forms, and image galleries"
+              className="relative w-full rounded-xl shadow-elegant"
+              loading="lazy"
+            />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">

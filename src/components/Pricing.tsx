@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Check, ArrowRight } from "lucide-react";
+import { Check, ArrowRight, Shield } from "lucide-react";
 
 const features = [
   "Custom design tailored to your trade",
@@ -18,7 +18,7 @@ const features = [
 
 const Pricing = () => {
   return (
-    <section className="py-20 bg-muted/30">
+    <section id="pricing" className="py-20 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -42,8 +42,14 @@ const Pricing = () => {
                 <div>
                   <div className="mb-8">
                     <div className="flex items-baseline mb-4">
-                      <span className="text-5xl font-bold text-foreground">£549</span>
-                      <span className="text-xl text-muted-foreground ml-2">one-time setup</span>
+                      <div className="flex flex-col">
+                        <div className="flex items-baseline">
+                          <span className="text-2xl text-muted-foreground line-through mr-3">£799</span>
+                          <span className="text-5xl font-bold text-foreground">£549</span>
+                          <span className="text-xl text-muted-foreground ml-2">one-time setup</span>
+                        </div>
+                        <span className="text-sm text-accent font-medium mt-1">Save £250 - Limited time offer</span>
+                      </div>
                     </div>
                     <div className="flex items-baseline">
                       <span className="text-3xl font-bold text-accent">£19.99</span>
@@ -53,6 +59,15 @@ const Pricing = () => {
                       Monthly fee covers hosting, security, updates, and priority support. 
                       Cancel anytime with 30 days notice.
                     </p>
+                    <div className="bg-accent/10 rounded-lg p-4 mt-4 border border-accent/20">
+                      <div className="flex items-center text-accent font-semibold text-sm mb-2">
+                        <Shield className="w-4 h-4 mr-2" />
+                        Money-Back Guarantee
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        Not satisfied? Get a full refund within 30 days, no questions asked.
+                      </p>
+                    </div>
                   </div>
 
                   <div className="space-y-4">
