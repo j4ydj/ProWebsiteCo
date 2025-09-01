@@ -12,7 +12,7 @@ const Footer = () => {
               <img 
                 src={proWebsiteCoLogo} 
                 alt="Pro Website Co" 
-                className="h-8 mr-3"
+                className="h-6 w-auto mr-3"
               />
             </div>
             <p className="text-background/80 mb-6 max-w-md">

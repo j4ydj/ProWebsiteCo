@@ -35,7 +35,7 @@ const Navigation = () => {
             <img 
               src={proWebsiteCoLogo} 
               alt="Pro Website Co - Professional Websites for UK Trades" 
-              className="h-8"
+              className="h-6 w-auto"
             />
           </div>
 
