@@ -160,11 +160,17 @@ const ExampleWork = () => {
         </div>
 
         <div className="text-center">
-          <Link to="/portfolio">
-            <Button variant="hero" size="lg">
-              See All Our Work
-            </Button>
-          </Link>
+          <Button variant="hero" size="lg" asChild>
+            <a 
+              href="https://solidbuild-built-to-last.lovable.app" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center"
+            >
+              <ExternalLink className="w-4 h-4 mr-2" />
+              View Live Examples
+            </a>
+          </Button>
         </div>
       </div>
     </section>
