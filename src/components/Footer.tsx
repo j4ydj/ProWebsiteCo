@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin } from "lucide-react";
-import proWebsiteCoLogo from "@/assets/prowebsiteco-logo.png";
+const proWebsiteCoLogo = "/lovable-uploads/f9d0b234-3c59-43c4-9a61-51088314195e.png";
 
 const Footer = () => {
   return (
