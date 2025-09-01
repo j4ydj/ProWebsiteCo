@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
-const proWebsiteCoLogo = "/lovable-uploads/f9d0b234-3c59-43c4-9a61-51088314195e.png";
+const proWebsiteCoLogo = "/lovable-uploads/f4283fe5-8bf6-4e10-bfbb-a15ccaadd166.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);

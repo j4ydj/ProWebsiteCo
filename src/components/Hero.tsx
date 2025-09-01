@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, PlayCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-websites.jpg";
+const proWebsiteCoLogo = "/lovable-uploads/f4283fe5-8bf6-4e10-bfbb-a15ccaadd166.png";
 
 const Hero = () => {
   return (
@@ -10,6 +11,13 @@ const Hero = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
+            <div className="flex items-center justify-center lg:justify-start mb-6">
+              <img 
+                src={proWebsiteCoLogo} 
+                alt="Pro Website Co - Professional Websites for UK Trades" 
+                className="h-12 md:h-14"
+              />
+            </div>
             <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/90 font-medium mb-6 border border-white/20">
               <span className="text-sm">🚀 Custom-designed from scratch — no templates</span>
             </div>
