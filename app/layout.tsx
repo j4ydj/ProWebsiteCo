@@ -11,10 +11,14 @@ export const metadata: Metadata = {
   title: "Pro Website Co — Custom Trade Websites",
   description:
     "Professional, custom-designed websites for UK tradespeople. Get more enquiries with a tailored online presence in 48 hours.",
+  metadataBase: new URL('https://prowebsiteco.com'),
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-    apple: "/favicon.svg",
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/icon.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
   },
 };
 
