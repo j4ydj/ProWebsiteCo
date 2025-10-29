@@ -10,6 +10,11 @@ lerna-debug.log*
 # Dependencies
 node_modules
 
+# Package managers
+bun.lockb
+yarn.lock
+pnpm-lock.yaml
+
 # Next.js
 /.next/
 /out/
