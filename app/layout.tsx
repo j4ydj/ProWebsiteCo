@@ -12,9 +12,9 @@ export const metadata: Metadata = {
   description:
     "Professional, custom-designed websites for UK tradespeople. Get more enquiries with a tailored online presence in 48 hours.",
   icons: {
-    icon: "/assets/prowebsitecologo.svg",
-    shortcut: "/assets/prowebsitecologo.svg",
-    apple: "/assets/prowebsitecologo.svg",
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
   },
 };
 
