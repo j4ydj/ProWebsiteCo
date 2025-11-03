@@ -1,6 +1,3 @@
-import { ExternalLink } from "lucide-react";
-
-import { Button } from "@/components/ui/button";
 import { contentService } from "@/lib/services/contentService";
 
 const examples = contentService.getAllContent().examples;
@@ -9,123 +6,56 @@ const ExampleWork = () => {
   return (
     <section id="examples" className="py-20 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Real Websites for Real Trades
+        <div className="mb-12 flex flex-col gap-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            Real Results for Real Trades
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Every website we create is designed from scratch for each client. 
-            Here's what's possible when your trade gets the custom treatment it deserves.
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            A snapshot of how custom trade websites transform enquiries, bookings, and brand trust.
           </p>
-          <div className="inline-flex items-center px-4 py-2 bg-accent/10 rounded-full text-accent font-medium">
-            All examples shown are unique, tailored designs — no templates used
-          </div>
         </div>
-
-
-        <div className="space-y-8 mb-12">
+        <div className="mb-12 space-y-6">
           {examples.map((example, index) => (
-            <div 
+            <div
               key={index}
-              className={`relative bg-card rounded-2xl p-8 shadow-card hover:shadow-elegant transition-all duration-500 border border-border group overflow-hidden ${
-                index % 2 === 1 ? 'lg:flex-row-reverse' : ''
-              }`}
+              className="rounded-xl border border-border/60 bg-card/90 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
             >
-              {/* Background glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              
-              <div className="relative grid lg:grid-cols-2 gap-8 items-center">
-                {/* Content Side */}
-                <div className="space-y-6">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <h3 className="text-2xl font-bold text-card-foreground mb-2">
-                        {example.trade}
-                      </h3>
-                      <span className="text-sm text-muted-foreground bg-muted px-3 py-1 rounded-full">
-                        {example.location}
-                      </span>
-                    </div>
-                    <div className="text-right">
-                      <div className="text-3xl font-bold text-accent">{example.result}</div>
-                      <div className="text-sm text-muted-foreground">in {example.timeframe}</div>
-                    </div>
+              <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                <div>
+                  <div className="flex items-center gap-3">
+                    <h3 className="text-xl font-semibold text-card-foreground">
+                      {example.trade}
+                    </h3>
+                    <span className="rounded-full bg-muted px-3 py-1 text-xs font-medium text-muted-foreground">
+                      {example.location}
+                    </span>
                   </div>
-
-                  {/* Before/After */}
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-muted/50 rounded-lg p-4">
-                      <div className="text-xs font-medium text-muted-foreground mb-2">BEFORE</div>
-                      <div className="text-sm text-card-foreground">{example.before}</div>
-                    </div>
-                    <div className="bg-accent/10 rounded-lg p-4">
-                      <div className="text-xs font-medium text-accent mb-2">AFTER</div>
-                      <div className="text-sm text-card-foreground">{example.after}</div>
-                    </div>
-                  </div>
-
-                  {/* Testimonial */}
-                  <blockquote className="border-l-4 border-accent pl-4 italic text-muted-foreground">
-                    "{example.testimonial}"
-                  </blockquote>
-
-                  {/* CTA */}
-                  <div className="pt-4">
-                    <a
-                      href={example.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center px-6 py-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/90 transition-all duration-300 font-medium group-hover:scale-105"
-                    >
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      View Live Website
-                    </a>
-                  </div>
+                  <p className="mt-2 text-sm text-muted-foreground/80">{example.highlight}</p>
                 </div>
-
-                {/* Visual Side */}
-                <div className="relative">
-                  <div className="aspect-[4/3] bg-gradient-to-br from-muted to-muted/50 rounded-xl overflow-hidden">
-                    {/* Placeholder for website preview */}
-                    <div className="w-full h-full flex items-center justify-center">
-                      <div className="text-center space-y-4">
-                        <div className="w-16 h-16 bg-accent/20 rounded-lg mx-auto flex items-center justify-center">
-                          <ExternalLink className="w-8 h-8 text-accent" />
-                        </div>
-                        <div className="space-y-2">
-                          <div className="text-sm font-medium text-card-foreground">
-                            Custom {example.trade} Website
-                          </div>
-                          <div className="text-xs text-muted-foreground">
-                            Mobile-optimized • SEO-ready • Professional design
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  {/* Floating result badge */}
-                  <div className="absolute -top-4 -right-4 bg-accent text-accent-foreground px-4 py-2 rounded-full font-bold shadow-lg animate-pulse">
-                    {example.highlight}
-                  </div>
+                <div className="flex items-center gap-3 text-sm">
+                  <span className="rounded-full bg-accent/10 px-3 py-1 font-semibold uppercase tracking-wide text-accent">
+                    {example.result}
+                  </span>
+                  <span className="text-muted-foreground">in {example.timeframe}</span>
                 </div>
               </div>
+
+              <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                <div className="rounded-lg border border-border/50 bg-background/70 p-4">
+                  <div className="text-xs font-semibold uppercase tracking-wide text-muted-foreground/80">Before</div>
+                  <p className="mt-1 text-sm text-card-foreground">{example.before}</p>
+                </div>
+                <div className="rounded-lg border border-accent/40 bg-accent/10 p-4">
+                  <div className="text-xs font-semibold uppercase tracking-wide text-accent">After</div>
+                  <p className="mt-1 text-sm text-card-foreground">{example.after}</p>
+                </div>
+              </div>
+
+              <blockquote className="mt-4 border-l-2 border-accent/60 pl-4 text-sm italic text-muted-foreground">
+                "{example.testimonial}"
+              </blockquote>
             </div>
           ))}
-        </div>
-
-        <div className="text-center">
-          <Button variant="hero" size="lg" asChild>
-            <a 
-              href="https://solidbuild-built-to-last.lovable.app" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center"
-            >
-              <ExternalLink className="w-4 h-4 mr-2" />
-              View Live Examples
-            </a>
-          </Button>
         </div>
       </div>
     </section>
