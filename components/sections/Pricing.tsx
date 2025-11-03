@@ -15,8 +15,7 @@ const Pricing = () => {
             Simple, Transparent Pricing
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            No hidden fees, no surprises. One setup cost, then a low monthly fee 
-            that covers everything your website needs to keep running smoothly.
+            No hidden fees, no surprises. One transparent setup cost covers a fully managed launch, hosting, and support to keep your site running smoothly.
           </p>
         </div>
 
@@ -41,13 +40,8 @@ const Pricing = () => {
                         <span className="text-sm text-accent font-medium mt-1">{pricing.limitedOffer}</span>
                       </div>
                     </div>
-                    <div className="flex items-baseline">
-                      <span className="text-3xl font-bold text-accent">£19.99</span>
-                      <span className="text-lg text-muted-foreground ml-2">/month</span>
-                    </div>
                     <p className="text-muted-foreground mt-4">
-                      Monthly fee covers hosting, security, updates, and priority support. 
-                      Cancel anytime with 30 days notice.
+                      Hosting, security, content updates, and priority support are all handled for you. Need new pages or edits later? Just ask and we take care of it on-demand with no surprise retainers.
                     </p>
                     <div className="bg-accent/10 rounded-lg p-4 mt-4 border border-accent/20">
                       <div className="flex items-center text-accent font-semibold text-sm mb-2">

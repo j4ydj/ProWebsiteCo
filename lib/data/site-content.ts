@@ -1,18 +1,15 @@
 import { MessageSquare, Palette, Rocket } from "lucide-react";
 
 export const heroContent = {
-  heading:
-    "Professional websites for trades in the UK — £549 setup + £19.99/month",
-  subheading:
-    "Custom-designed, mobile-friendly websites that bring you more enquiries. Get your professional online presence in just 48 hours.",
-  highlight: "🚀 Custom-designed from scratch — no templates",
-  ctaLabel: "Get Your Free Custom Demo in 24 Hours",
-  portfolioCta: "View Live Examples",
-  chatCta: "💬 Chat with a Designer",
-  setupGuarantee: "✅ Pay setup fee only after you approve your design",
-  waLink:
-    "https://wa.me/447808822974?text=Hi, I'd like to chat with a designer about getting a website for my trade business",
-  heroImage: "/assets/hero-websites.jpg",
+  heading: "Forge Your Digital Presence",
+  subheading: "ProWebsiteCo crafts powerhouse websites for UK trades in 48 hours. Like a master tool, we build sites that work as hard as you do—driving enquiries and growing your business.",
+  highlight: "ProWebsiteCo — Forging Websites for Trades",
+  ctaLabel: "Start Your Project →",
+  heroVideo:
+    "https://res.cloudinary.com/djyeut0q7/video/upload/v1762187617/Firefly_A_single_chrome_hammer_glowing_from_within_with_orange-hot_digital_energy_is_suspended_in_uqggew.mp4",
+  verticalLabel: "PROWEBSITECO · TRADE TOOLS",
+  footerLeft: "✦ Built for Trades, 2025",
+  footerRight: "© ProWebsiteCo",
   logo: "/assets/prowebsitecologo.svg",
 };
 
