@@ -53,9 +53,9 @@ const Navigation = () => {
 
           {/* CTA Button - Desktop */}
           <div className="hidden lg:flex items-center space-x-4">
-            <a href="tel:0800-123-4567" className="flex items-center text-accent hover:text-accent/80 transition-colors">
+            <a href="tel:+442039967776" className="flex items-center text-accent hover:text-accent/80 transition-colors">
               <Phone className="w-4 h-4 mr-2" />
-              <span className="text-sm font-medium">0800 123 4567</span>
+              <span className="text-sm font-medium">+44 203 996 7776</span>
             </a>
             <Button 
               variant="cta" 
@@ -94,11 +94,11 @@ const Navigation = () => {
               ))}
               <div className="pt-4 pb-2 border-t border-border mt-4">
                 <a 
-                  href="tel:0800-123-4567" 
+                  href="tel:+442039967776" 
                   className="flex items-center px-3 py-3 text-accent hover:text-accent/80 min-h-[48px]"
                 >
                   <Phone className="w-4 h-4 mr-2" />
-                  <span className="font-medium">0800 123 4567</span>
+                  <span className="font-medium">+44 203 996 7776</span>
                 </a>
                 <Button 
                   variant="cta" 
