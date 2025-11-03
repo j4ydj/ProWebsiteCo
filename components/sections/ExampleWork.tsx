@@ -14,47 +14,55 @@ const ExampleWork = () => {
             A snapshot of how custom trade websites transform enquiries, bookings, and brand trust.
           </p>
         </div>
-        <div className="mb-12 space-y-6">
+        <div className="grid gap-6 md:grid-cols-2">
           {examples.map((example, index) => (
-            <div
+            <article
               key={index}
-              className="rounded-xl border border-border/60 bg-card/90 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+              className="flex h-full flex-col rounded-2xl border border-border/50 bg-card/95 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
             >
-              <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+              <header className="flex flex-wrap items-center justify-between gap-3">
                 <div>
-                  <div className="flex items-center gap-3">
-                    <h3 className="text-xl font-semibold text-card-foreground">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-semibold uppercase tracking-wide text-accent">
                       {example.trade}
-                    </h3>
+                    </span>
                     <span className="rounded-full bg-muted px-3 py-1 text-xs font-medium text-muted-foreground">
                       {example.location}
                     </span>
                   </div>
-                  <p className="mt-2 text-sm text-muted-foreground/80">{example.highlight}</p>
+                  <p className="mt-2 text-sm text-muted-foreground/80">
+                    {example.highlight}
+                  </p>
                 </div>
-                <div className="flex items-center gap-3 text-sm">
-                  <span className="rounded-full bg-accent/10 px-3 py-1 font-semibold uppercase tracking-wide text-accent">
+                <div className="flex flex-col items-end text-right text-sm">
+                  <span className="rounded-md bg-accent/10 px-3 py-1 font-semibold text-accent">
                     {example.result}
                   </span>
-                  <span className="text-muted-foreground">in {example.timeframe}</span>
+                  <span className="mt-1 text-muted-foreground/80">in {example.timeframe}</span>
+                </div>
+              </header>
+
+              <div className="mt-4 grid gap-4 text-sm md:grid-cols-2">
+                <div className="rounded-xl border border-border/60 bg-background/80 p-4">
+                  <span className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground/70">
+                    Before
+                  </span>
+                  <p className="mt-2 text-card-foreground">{example.before}</p>
+                </div>
+                <div className="rounded-xl border border-accent/40 bg-accent/10 p-4">
+                  <span className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+                    After
+                  </span>
+                  <p className="mt-2 text-card-foreground">{example.after}</p>
                 </div>
               </div>
 
-              <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                <div className="rounded-lg border border-border/50 bg-background/70 p-4">
-                  <div className="text-xs font-semibold uppercase tracking-wide text-muted-foreground/80">Before</div>
-                  <p className="mt-1 text-sm text-card-foreground">{example.before}</p>
-                </div>
-                <div className="rounded-lg border border-accent/40 bg-accent/10 p-4">
-                  <div className="text-xs font-semibold uppercase tracking-wide text-accent">After</div>
-                  <p className="mt-1 text-sm text-card-foreground">{example.after}</p>
-                </div>
-              </div>
-
-              <blockquote className="mt-4 border-l-2 border-accent/60 pl-4 text-sm italic text-muted-foreground">
-                "{example.testimonial}"
-              </blockquote>
-            </div>
+              <footer className="mt-4 flex items-start gap-4 text-sm">
+                <blockquote className="flex-1 border-l-2 border-accent/60 pl-4 text-muted-foreground">
+                  "{example.testimonial}"
+                </blockquote>
+              </footer>
+            </article>
           ))}
         </div>
       </div>
