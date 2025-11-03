@@ -43,7 +43,7 @@ const CallToAction = () => {
             <h3 className="text-lg font-semibold text-white mb-2">WhatsApp</h3>
             <p className="text-white/80 text-sm">Quick message us</p>
             <a 
-              href="https://wa.me/447123456789" 
+              href="https://wa.me/447808822974?text=Hi, I'd like to get a website for my trade business" 
               className="text-accent font-medium mt-2 inline-block hover:underline"
               target="_blank" 
               rel="noopener noreferrer"
