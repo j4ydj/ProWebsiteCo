@@ -11,7 +11,7 @@ export const heroContent = {
   chatCta: "💬 Chat with a Designer",
   setupGuarantee: "✅ Pay setup fee only after you approve your design",
   waLink:
-    "https://wa.me/447800123456?text=Hi, I'd like to chat with a designer about getting a website for my trade business",
+    "https://wa.me/447808822974?text=Hi, I'd like to chat with a designer about getting a website for my trade business",
   heroImage: "/assets/hero-websites.jpg",
   logo: "/assets/prowebsitecologo.svg",
 };

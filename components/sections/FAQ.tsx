@@ -92,7 +92,7 @@ const FAQ = () => {
               Call us: +44 203 996 7776
             </a>
             <a 
-              href="https://wa.me/447800123456?text=Hi, I have a question about getting a website for my trade business"
+              href="https://wa.me/447808822974?text=Hi, I have a question about getting a website for my trade business"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium min-h-[48px]"
