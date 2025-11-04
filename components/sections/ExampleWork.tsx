@@ -12,11 +12,11 @@ const screenshots = {
   windowCleaner: "/assets/screenshots/window-cleaner-site.png",
 };
 
-// Map them to examples
-examples[0].screenshot = screenshots.builder;
-examples[1].screenshot = screenshots.gardener;
-examples[2].screenshot = screenshots.plasterer;
-examples[3].screenshot = screenshots.windowCleaner;
+// Create enhanced examples with screenshot instead of mutating
+const enhancedExamples = examples.map((example, index) => ({
+  ...example,
+  screenshot: Object.values(screenshots)[index]
+}));
 
 const ExampleWork = () => {
   return (
@@ -35,7 +35,7 @@ const ExampleWork = () => {
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
-          {examples.map((example, index) => (
+          {enhancedExamples.map((example, index) => (
             <article
               key={index}
               className="group relative overflow-hidden rounded-2xl border border-border/50 bg-card shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
