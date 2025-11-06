@@ -1,23 +1,23 @@
-import { Palette, Smartphone, Zap, QrCode } from "lucide-react";
+import Image from "next/image";
 
 const valuePoints = [
   {
-    icon: Palette,
+    icon: "/assets/logos/tailored-business.png",
     title: "Tailored to Your Business",
     description: "No cookie-cutter templates. Every website is designed from scratch to reflect your unique brand and services."
   },
   {
-    icon: Zap,
+    icon: "/assets/logos/convert-enquiries.png",
     title: "Built to Convert Enquiries",
     description: "Strategic design focused on turning visitors into paying customers. Clear contact forms and compelling calls-to-action."
   },
   {
-    icon: Smartphone,
+    icon: "/assets/logos/mobile-fast.png",
     title: "Mobile-Optimised & Fast",
     description: "Your customers browse on their phones. We ensure your site looks perfect and loads lightning-fast on every device."
   },
   {
-    icon: QrCode,
+    icon: "/assets/logos/qr-code.png",
     title: "Free QR Code Included",
     description: "Get a custom QR code for your van, signage, and business cards. Make it easy for customers to find you online."
   }
@@ -39,14 +39,19 @@ const ValuePoints = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {valuePoints.map((point, index) => {
-            const IconComponent = point.icon;
             return (
               <div 
                 key={index}
                 className="group bg-card rounded-xl p-8 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 border border-border"
               >
-                <div className="bg-gradient-primary rounded-lg w-16 h-16 flex items-center justify-center mb-6 group-hover:shadow-glow transition-all duration-300">
-                  <IconComponent className="w-8 h-8 text-primary-foreground" />
+                <div className="flex items-center justify-center mb-6">
+                  <Image 
+                    src={point.icon} 
+                    alt={point.title}
+                    width={128}
+                    height={128}
+                    className="object-contain"
+                  />
                 </div>
                 <h3 className="text-xl font-semibold text-card-foreground mb-3">
                   {point.title}
