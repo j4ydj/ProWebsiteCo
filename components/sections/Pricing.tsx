@@ -33,20 +33,20 @@ const Pricing = () => {
                     <div className="flex items-baseline mb-4">
                       <div className="flex flex-col">
                         <div className="flex items-baseline">
-                          <span className="text-2xl text-muted-foreground line-through mr-3">£799</span>
-                          <span className="text-5xl font-bold text-foreground">£549</span>
-                          <span className="text-xl text-muted-foreground ml-2">one-time setup</span>
+                          <span className="text-2xl text-muted-foreground line-through mr-3">£1,149</span>
+                          <span className="text-5xl font-bold text-foreground">£899</span>
+                          <span className="text-xl text-muted-foreground ml-2">one-time</span>
                         </div>
                         <span className="text-sm text-accent font-medium mt-1">{pricing.limitedOffer}</span>
                       </div>
                     </div>
                     <p className="text-muted-foreground mt-4">
-                      Hosting, security, content updates, and priority support are all handled for you. Need new pages or edits later? Just ask and we take care of it on-demand with no surprise retainers.
+                      Includes 2 full years of premium hosting, SSL security, updates, and priority support. After 2 years, keep your site running for just £99/year (cancel anytime, or take full ownership).
                     </p>
                     <div className="bg-accent/10 rounded-lg p-4 mt-4 border border-accent/20">
                       <div className="flex items-center text-accent font-semibold text-sm mb-2">
                         <Shield className="w-4 h-4 mr-2" />
-                        Money-Back Guarantee
+                        Risk-Free Design Process
                       </div>
                       <p className="text-sm text-muted-foreground">{pricing.guarantee}</p>
                     </div>

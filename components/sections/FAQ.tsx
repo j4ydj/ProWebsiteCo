@@ -16,16 +16,24 @@ const faqs = [
     answer: "Most websites are completed within 48 hours of receiving all your information and content. Complex projects might take up to 5 working days, but we'll let you know upfront if that's the case."
   },
   {
+    question: "What's included in the £899 setup fee?",
+    answer: "Everything you need: custom design tailored to your trade, 2 full years of premium hosting, SSL security, unlimited minor content updates, local SEO setup, free QR code for your van, and priority support. After 2 years, it's just £99/year to keep everything running."
+  },
+  {
+    question: "When do I pay the £899 setup fee?",
+    answer: "You only pay after you've seen and approved your website design. We'll create your custom design first, make any revisions you need, and you only pay once you're completely happy with it. No payment required upfront."
+  },
+  {
     question: "Can I make changes after the website is live?",
-    answer: "Absolutely! Minor content updates (like phone numbers, prices, or adding new photos) are included in your monthly fee. Larger design changes can be quoted separately if needed."
+    answer: "Absolutely! Minor content updates (like phone numbers, prices, or adding new photos) are included for the full 2 years. Larger design changes or new pages can be added on-demand—we'll quote these separately if needed."
   },
   {
     question: "Do you provide the domain name and hosting?",
-    answer: "Yes, everything is included in your monthly fee - hosting, SSL certificate, security updates, and technical support. You can use your existing domain or we can help you register a new one."
+    answer: "Yes, 2 years of premium hosting and SSL security are included in your £899 setup fee. You can use your existing domain or we can help you register a new one (domain registration is around £10-15/year)."
   },
   {
-    question: "What happens if I want to cancel?",
-    answer: "You can cancel anytime with 30 days' notice. There are no long-term contracts or cancellation fees. Your website will remain live during the notice period."
+    question: "What happens after 2 years?",
+    answer: "After 2 years, you can keep your site running for just £99/year (covers hosting, SSL, and support). Or, if you prefer, you can take full ownership and host it yourself—we'll help you transfer everything. No long-term contracts, your choice."
   },
   {
     question: "Will my website work on mobile phones?",
@@ -37,7 +45,7 @@ const faqs = [
   },
   {
     question: "What if I'm not happy with the design?",
-    answer: "We offer unlimited revisions during the design phase until you're completely satisfied. You only pay the setup fee once you approve the final design."
+    answer: "We offer unlimited revisions during the design phase until you're completely satisfied. You only pay the £899 setup fee once you approve the final design. If we can't create something you love, you don't pay anything."
   }
 ];
 

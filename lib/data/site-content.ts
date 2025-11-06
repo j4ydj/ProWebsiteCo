@@ -64,9 +64,9 @@ export const pricingFeatures = [
 
 export const pricingContent = {
   limitedOffer: "Save £250 - Limited time offer",
-  guarantee: "Not satisfied? Get a full refund within 30 days, no questions asked.",
+  guarantee: "Not happy with the design? We'll revise it until you love it, or you don't pay the setup fee.",
   benefitHighlight:
-    "🚀 Limited Time: First 20 customers get a free logo design (worth £150)",
+    "",
 };
 
 export const exampleProjects = [
