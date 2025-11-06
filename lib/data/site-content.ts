@@ -2,7 +2,7 @@ import { MessageSquare, Palette, Rocket } from "lucide-react";
 
 export const heroContent = {
   heading: "Forge Your Digital Presence",
-  subheading: "ProWebsiteCo crafts powerhouse websites for UK trades in 48 hours. Like a master tool, we build sites that work as hard as you do—driving enquiries and growing your business.",
+  subheading: "ProWebsiteCo crafts powerhouse websites for UK trades in one week. Like a master tool, we build sites that work as hard as you do—driving enquiries and growing your business.",
   highlight: "ProWebsiteCo — Forging Websites for Trades",
   ctaLabel: "Start Your Project →",
   heroVideo:
@@ -43,7 +43,7 @@ export const howItWorksSteps = [
     step: "Step 3",
     title: "Your Site Goes Live",
     description:
-      "Within 48 hours, your professional website is live and ready to start bringing in enquiries. We handle all the technical setup and testing.",
+      "Within one week, your professional website is live and ready to start bringing in enquiries. We handle all the design revisions, technical setup, and testing.",
   },
 ];
 

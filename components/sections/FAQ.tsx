@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     question: "How long does it take to build my website?",
-    answer: "Most websites are completed within 48 hours of receiving all your information and content. Complex projects might take up to 5 working days, but we'll let you know upfront if that's the case."
+    answer: "From start to finish, most websites are completed within one week. This includes time for design revisions and your approval. We'll create your initial design within 2-3 days, then work with you on any changes until you're completely happy. Complex projects might take up to 10 working days, but we'll let you know upfront if that's the case."
   },
   {
     question: "What's included in the £899 setup fee?",

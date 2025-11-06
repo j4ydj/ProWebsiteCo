@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Pro Website Co — Custom Trade Websites",
   description:
-    "Professional, custom-designed websites for UK tradespeople. Get more enquiries with a tailored online presence in 48 hours.",
+    "Professional, custom-designed websites for UK tradespeople. Get more enquiries with a tailored online presence in one week.",
   metadataBase: new URL('https://prowebsiteco.com'),
   icons: {
     icon: [

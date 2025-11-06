@@ -53,7 +53,7 @@ const HowItWorks = () => {
 
         <div className="text-center mt-16">
           <div className="inline-flex items-center px-6 py-3 bg-accent/10 rounded-full text-accent font-semibold">
-            ⚡ Average delivery time: 48 hours
+            ⚡ Average delivery time: One week
           </div>
         </div>
       </div>

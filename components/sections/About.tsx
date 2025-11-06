@@ -86,7 +86,7 @@ const About = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-card-foreground mb-1">Quick Turnaround</h4>
-                    <p className="text-sm text-muted-foreground">Most sites live within 48 hours of approval</p>
+                    <p className="text-sm text-muted-foreground">Most sites live within one week</p>
                   </div>
                 </div>
               </div>
