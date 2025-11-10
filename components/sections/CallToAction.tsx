@@ -35,7 +35,7 @@ const CallToAction = () => {
             <Phone className="w-8 h-8 text-accent mx-auto mb-4" />
             <h3 className="text-lg font-semibold text-white mb-2">Call Us</h3>
             <p className="text-white/80 text-sm">Speak to a designer today</p>
-            <p className="text-accent font-medium mt-2">+44 203 996 7776</p>
+            <p className="text-accent font-medium mt-2">0330 043 6621</p>
           </div>
           
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
