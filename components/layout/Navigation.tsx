@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { contentService } from "@/lib/services/contentService";
@@ -52,18 +52,14 @@ const Navigation = () => {
           </div>
 
           {/* CTA Button - Desktop */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <a href="tel:03300436621" className="flex items-center text-accent hover:text-accent/80 transition-colors">
-              <Phone className="w-4 h-4 mr-2" />
-              <span className="text-sm font-medium">0330 043 6621</span>
-            </a>
-            <Button 
-              variant="cta" 
+          <div className="hidden lg:flex items-center">
+            <Button
+              variant="cta"
               size="sm"
               onClick={() => scrollToSection('#contact')}
               className="min-h-[48px]"
             >
-              Get Started
+              Contact Us
             </Button>
           </div>
 
@@ -93,20 +89,13 @@ const Navigation = () => {
                 </button>
               ))}
               <div className="pt-4 pb-2 border-t border-border mt-4">
-                <a 
-                  href="tel:03300436621" 
-                  className="flex items-center px-3 py-3 text-accent hover:text-accent/80 min-h-[48px]"
-                >
-                  <Phone className="w-4 h-4 mr-2" />
-                  <span className="font-medium">0330 043 6621</span>
-                </a>
-                <Button 
-                  variant="cta" 
+                <Button
+                  variant="cta"
                   size="lg"
                   onClick={() => scrollToSection('#contact')}
-                  className="w-full mx-3 mt-2 min-h-[48px]"
+                  className="w-full mx-3 min-h-[48px]"
                 >
-                  Get Started Now
+                  Contact Us
                 </Button>
               </div>
             </div>

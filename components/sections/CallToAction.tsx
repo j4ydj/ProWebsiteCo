@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { createClient } from "@supabase/supabase-js";
-import { ArrowRight, MessageCircle, Phone, Send } from "lucide-react";
+import { ArrowRight, MessageCircle, Phone, Send, Mail } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -63,7 +63,7 @@ const CallToAction = () => {
         </p>
         
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
             <MessageCircle className="w-8 h-8 text-accent mx-auto mb-4" />
             <h3 className="text-lg font-semibold text-white mb-2">WhatsApp</h3>
@@ -75,6 +75,18 @@ const CallToAction = () => {
               rel="noopener noreferrer"
             >
               Start chat
+            </a>
+          </div>
+
+          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+            <Mail className="w-8 h-8 text-accent mx-auto mb-4" />
+            <h3 className="text-lg font-semibold text-white mb-2">Email Us</h3>
+            <p className="text-white/80 text-sm">Send us an email</p>
+            <a
+              href="mailto:hello@prowebsiteco.com?subject=Website Inquiry"
+              className="text-accent font-medium mt-2 inline-block hover:underline"
+            >
+              hello@prowebsiteco.com
             </a>
           </div>
 

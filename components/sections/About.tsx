@@ -49,11 +49,6 @@ const About = () => {
                 should be too.
               </p>
             </div>
-            <div className="mt-8">
-              <Button variant="hero" size="lg">
-                Meet the Team
-              </Button>
-            </div>
           </div>
 
           <div className="space-y-8">
