@@ -59,8 +59,13 @@ const Pricing = () => {
                         <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
                       </Button>
                     </a>
+                    <a href="https://buy.stripe.com/test_cNi4gBa3Z2Y4gGKdeRfjG00" target="_blank" rel="noopener noreferrer">
+                      <Button variant="outline" size="lg" className="w-full border-accent text-accent hover:bg-accent hover:text-accent-foreground">
+                        Pay Setup Fee Now (£799)
+                      </Button>
+                    </a>
                     <p className="text-center text-sm text-muted-foreground">
-                      💳 Pay setup fee only after you approve the design
+                      💳 Pay after you approve your design, or pay now to get started immediately
                     </p>
                   </div>
                 </div>
