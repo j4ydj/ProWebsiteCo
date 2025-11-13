@@ -94,10 +94,10 @@ const FAQ = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="tel:03300436621"
+              href="tel:07808822974"
               className="inline-flex items-center justify-center px-6 py-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/90 transition-colors font-medium min-h-[48px]"
             >
-              Call us: 0330 043 6621
+              Call us: 07808 822974
             </a>
             <a 
               href="https://wa.me/447808822974?text=Hi, I have a question about getting a website for my trade business"
