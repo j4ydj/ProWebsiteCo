@@ -1,7 +1,10 @@
+'use client';
+
 import { ArrowRight, Check, Shield } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { contentService } from "@/lib/services/contentService";
+import { trackPaymentLinkClick } from "@/lib/utils/tracking";
 
 const features = contentService.getPricingFeatures();
 const pricing = contentService.getPricingContent();
@@ -59,7 +62,12 @@ const Pricing = () => {
                         <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
                       </Button>
                     </a>
-                    <a href="https://buy.stripe.com/test_cNi4gBa3Z2Y4gGKdeRfjG00" target="_blank" rel="noopener noreferrer">
+                    <a 
+                      href="https://buy.stripe.com/test_cNi4gBa3Z2Y4gGKdeRfjG00" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      onClick={() => trackPaymentLinkClick()}
+                    >
                       <Button variant="outline" size="lg" className="w-full border-accent text-accent hover:bg-accent hover:text-accent-foreground">
                         Pay Setup Fee Now (£799)
                       </Button>

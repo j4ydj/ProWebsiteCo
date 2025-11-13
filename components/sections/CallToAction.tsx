@@ -12,6 +12,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { trackFormSubmit, trackWhatsAppClick, trackEmailClick } from "@/lib/utils/tracking";
+import { sendNotifications } from "@/lib/services/notifications";
 
 const supabaseUrl = "https://nveahhqvqrzuosladhgl.supabase.co";
 const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im52ZWFoaHF2cXJ6dW9zbGFkaGdsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI5NzY5NTUsImV4cCI6MjA3ODU1Mjk1NX0.3HSLYKjpJMkXeLaC35e42uq6DiPpbvo9suq0uReY_yI";
@@ -40,6 +42,19 @@ const CallToAction = () => {
     try {
       const { error } = await supabase.from('leads').insert([data]);
       if (error) throw error;
+      
+      // Track conversion
+      trackFormSubmit(data.trade);
+      
+      // Send notifications
+      await sendNotifications({
+        name: data.name,
+        email: data.email,
+        trade: data.trade,
+        message: data.message,
+        createdAt: new Date().toISOString(),
+      });
+      
       setSubmitMessage("Thank you! We'll get back to you within 24 hours.");
       reset();
     } catch (error) {
@@ -73,6 +88,7 @@ const CallToAction = () => {
               className="text-accent font-medium mt-2 inline-block hover:underline"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackWhatsAppClick()}
             >
               Start chat
             </a>
@@ -85,6 +101,7 @@ const CallToAction = () => {
             <a
               href="mailto:hello@prowebsiteco.com?subject=Website Inquiry"
               className="text-accent font-medium mt-2 inline-block hover:underline"
+              onClick={() => trackEmailClick()}
             >
               hello@prowebsiteco.com
             </a>

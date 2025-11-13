@@ -1,7 +1,10 @@
+ 'use client';
+
 import { ArrowRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { contentService } from "@/lib/services/contentService";
+import { trackCTAClick } from "@/lib/utils/tracking";
 
 const hero = contentService.getHero();
 
@@ -34,7 +37,7 @@ const Hero = () => {
               {hero.subheading}
             </p>
             <div>
-              <a href="#contact">
+              <a href="#contact" onClick={() => trackCTAClick('hero')}>
                 <Button
                   size="lg"
                   className="group inline-flex items-center rounded-lg bg-white px-6 py-2 text-sm font-semibold uppercase tracking-wide text-black transition hover:bg-white/90"
