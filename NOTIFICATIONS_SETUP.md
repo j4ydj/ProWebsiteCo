@@ -2,7 +2,7 @@
 
 This guide explains how to configure email and Slack notifications for new leads.
 
-**Note:** Since this site uses static export, API routes are not available. Notifications should be configured via Supabase Database Triggers or Edge Functions.
+**Note:** Since this site uses static export, client-side notifications can't access server environment variables for security. Notifications must be configured via Supabase Database Triggers or Edge Functions.
 
 ## Email Notifications
 
@@ -47,7 +47,7 @@ This guide explains how to configure email and Slack notifications for new leads
 5. Copy the webhook URL
 6. Add to your `.env.local` file:
    ```
-   SLACK_WEBHOOK_URL=https://hooks.slack.com/services/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
+   SLACK_WEBHOOK_URL=
    ```
 
 ## Environment Variables Summary
