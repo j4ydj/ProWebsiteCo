@@ -2,7 +2,7 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
 import { Resend } from 'https://esm.sh/resend@2'
 
 const resend = new Resend('re_W1hufd82_Dakqg4zcYck8SNXoEZuAScaR')
-const slackWebhook = 'https://hooks.slack.com/services/YOUR/WEBHOOK/URL' // Replace with your webhook
+const slackWebhook = 'YOUR_SLACK_WEBHOOK_URL_HERE' // Replace with your actual webhook from Slack
 
 console.log('Edge Function loaded')
 

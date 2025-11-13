@@ -61,7 +61,7 @@ EMAIL_WEBHOOK_URL=your_email_webhook (if using webhook)
 NOTIFICATION_EMAIL=hello@prowebsiteco.com
 
 # Slack notifications
-SLACK_WEBHOOK_URL=https://hooks.slack.com/services/YOUR/WEBHOOK/URL
+SLACK_WEBHOOK_URL=your_slack_webhook_url_here
 
 # Meta Pixel (for analytics)
 NEXT_PUBLIC_META_PIXEL_ID=your_pixel_id
