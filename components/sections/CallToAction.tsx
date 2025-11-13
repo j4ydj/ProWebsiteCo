@@ -62,45 +62,25 @@ const CallToAction = () => {
           with professional, custom-designed websites.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <a href="#contact" className="group">
-            <Button variant="accent" size="xl" className="w-full">
-              Get My Website Now
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          </a>
-          <Link href="/portfolio">
-            <Button variant="outline" size="xl" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
-              See Our Portfolio
-            </Button>
-          </Link>
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-            <Phone className="w-8 h-8 text-accent mx-auto mb-4" />
-            <h3 className="text-lg font-semibold text-white mb-2">Call Us</h3>
-            <p className="text-white/80 text-sm">Speak to a designer today</p>
-            <p className="text-accent font-medium mt-2">0330 043 6621</p>
-          </div>
-          
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
             <MessageCircle className="w-8 h-8 text-accent mx-auto mb-4" />
             <h3 className="text-lg font-semibold text-white mb-2">WhatsApp</h3>
             <p className="text-white/80 text-sm">Quick message us</p>
-            <a 
-              href="https://wa.me/447808822974?text=Hi, I'd like to get a website for my trade business" 
+            <a
+              href="https://wa.me/447808822974?text=Hi, I'd like to get a website for my trade business"
               className="text-accent font-medium mt-2 inline-block hover:underline"
-              target="_blank" 
+              target="_blank"
               rel="noopener noreferrer"
             >
               Start chat
             </a>
           </div>
-          
+
           <a href="#contact" className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-colors">
             <ArrowRight className="w-8 h-8 text-accent mx-auto mb-4" />
-            <h3 className="text-lg font-semibold text-white mb-2">Get Started</h3>
+            <h3 className="text-lg font-semibold text-white mb-2">Contact Us</h3>
             <p className="text-white/80 text-sm">Free consultation</p>
             <p className="text-accent font-medium mt-2">No commitment</p>
           </a>
@@ -115,7 +95,7 @@ const CallToAction = () => {
                 <Input
                   id="name"
                   {...register("name")}
-                  className="bg-white/20 border-white/30 text-white placeholder-white/70"
+                  className="bg-white border-gray-300 text-black placeholder-gray-500"
                   placeholder="Your name"
                 />
                 {errors.name && <p className="text-red-300 text-sm mt-1">{errors.name.message}</p>}
@@ -126,7 +106,7 @@ const CallToAction = () => {
                   id="email"
                   type="email"
                   {...register("email")}
-                  className="bg-white/20 border-white/30 text-white placeholder-white/70"
+                  className="bg-white border-gray-300 text-black placeholder-gray-500"
                   placeholder="your.email@example.com"
                 />
                 {errors.email && <p className="text-red-300 text-sm mt-1">{errors.email.message}</p>}
@@ -137,7 +117,7 @@ const CallToAction = () => {
               <Input
                 id="trade"
                 {...register("trade")}
-                className="bg-white/20 border-white/30 text-white placeholder-white/70"
+                className="bg-white border-gray-300 text-black placeholder-gray-500"
                 placeholder="e.g. Plumber, Electrician, Builder"
               />
               {errors.trade && <p className="text-red-300 text-sm mt-1">{errors.trade.message}</p>}
@@ -147,7 +127,7 @@ const CallToAction = () => {
               <Textarea
                 id="message"
                 {...register("message")}
-                className="bg-white/20 border-white/30 text-white placeholder-white/70 min-h-[100px]"
+                className="bg-white border-gray-300 text-black placeholder-gray-500 min-h-[100px]"
                 placeholder="Tell us about your business and what you need..."
               />
               {errors.message && <p className="text-red-300 text-sm mt-1">{errors.message.message}</p>}
