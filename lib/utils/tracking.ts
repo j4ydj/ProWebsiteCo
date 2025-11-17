@@ -54,3 +54,8 @@ export const trackCTAClick = (location: string) => {
   trackEvent('cta_clicked', { location });
 };
 
+export const trackPhoneClick = () => {
+  trackConversion('phone_click', 0);
+  trackEvent('phone_clicked');
+};
+

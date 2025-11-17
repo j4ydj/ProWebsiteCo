@@ -1,3 +1,5 @@
+'use client';
+
 import Image from "next/image";
 import {
   Accordion,
@@ -96,6 +98,11 @@ const FAQ = () => {
             <a 
               href="tel:07808822974"
               className="inline-flex items-center justify-center px-6 py-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/90 transition-colors font-medium min-h-[48px]"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).gtag) {
+                  (window as any).gtag('event', 'phone_click', { event_category: 'Contact' });
+                }
+              }}
             >
               Call us: 07808 822974
             </a>
