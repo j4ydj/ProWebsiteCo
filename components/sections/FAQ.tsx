@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     question: "What's included in the £899 setup fee?",
-    answer: "Everything you need: custom design tailored to your trade, 2 full years of premium hosting, SSL security, unlimited minor content updates, local SEO setup, free QR code for your van, and priority support. After 2 years, it's just £99/year to keep everything running."
+    answer: "Everything to get you online: custom design, copywriting, Google Maps setup, 2 full years of premium hosting & security updates. Technical maintenance is covered, so your site stays safe and fast. For text/photo changes, we give you an easy login to do it yourself."
   },
   {
     question: "When do I pay the £899 setup fee?",
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     question: "Can I make changes after the website is live?",
-    answer: "Absolutely! Minor content updates (like phone numbers, prices, or adding new photos) are included for the full 2 years. Larger design changes or new pages can be added on-demand—we'll quote these separately if needed."
+    answer: "Yes! You'll have full access to an easy-to-use editor where you can update text, prices, and add new project photos in seconds. If you need us to do it for you, we offer affordable support packages."
   },
   {
     question: "Do you provide the domain name and hosting?",

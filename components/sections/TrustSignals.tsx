@@ -37,13 +37,13 @@ const TrustSignals = () => {
               >
                 <div className="mb-4 rounded-full bg-accent/10 p-3 transition-transform duration-300 group-hover:scale-110 group-hover:bg-accent/20">
                   <IconComponent className="h-6 w-6 text-accent" />
-                </div>
+                  </div>
                 <div className="space-y-1">
                   <h3 className="font-bold text-foreground text-base">
-                    {signal.text}
+                      {signal.text}
                   </h3>
                   <p className="text-sm font-medium text-muted-foreground">
-                    {signal.subtext}
+                      {signal.subtext}
                   </p>
                 </div>
               </div>

@@ -77,7 +77,7 @@ const About = () => {
                     <li key={i} className="flex items-start gap-3">
                        <div className="w-5 h-5 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center shrink-0 mt-0.5">
                           <div className="w-2 h-2 rounded-full bg-green-600" />
-                       </div>
+                  </div>
                        <span className="text-muted-foreground font-medium">{item}</span>
                     </li>
                  ))}

@@ -87,10 +87,10 @@ const CallToAction = () => {
                     </span>
                     <h2 className="text-4xl md:text-5xl font-black leading-tight mb-6">
                         Ready to Dominate <br /> Your Local Area?
-                    </h2>
+        </h2>
                     <p className="text-lg text-white/80 leading-relaxed max-w-md">
                         Join 150+ tradespeople who are getting more high-value leads with a Pro Website Co site. No generic templates, just results.
-                    </p>
+        </p>
                 </div>
 
                 <div className="space-y-4">
@@ -102,16 +102,16 @@ const CallToAction = () => {
                             <h3 className="font-bold text-lg">WhatsApp Us</h3>
                             <p className="text-sm text-white/60">Fastest response time</p>
                         </div>
-                        <a
-                            href="https://wa.me/447808822974?text=Hi, I'd like to get a website for my trade business"
-                            target="_blank"
-                            rel="noopener noreferrer"
+            <a
+              href="https://wa.me/447808822974?text=Hi, I'd like to get a website for my trade business"
+              target="_blank"
+              rel="noopener noreferrer"
                             className="ml-auto text-sm font-bold text-green-400 hover:text-green-300 flex items-center gap-1"
-                            onClick={() => trackWhatsAppClick()}
-                        >
+              onClick={() => trackWhatsAppClick()}
+            >
                             Chat Now <ArrowRight className="w-4 h-4" />
-                        </a>
-                    </div>
+            </a>
+          </div>
 
                     <div className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
                          <div className="bg-blue-500/20 p-3 rounded-lg">
@@ -121,14 +121,14 @@ const CallToAction = () => {
                             <h3 className="font-bold text-lg">Email Us</h3>
                             <p className="text-sm text-white/60">Send us your details</p>
                         </div>
-                        <a
-                            href="mailto:hello@prowebsiteco.com?subject=Website Inquiry"
+            <a
+              href="mailto:hello@prowebsiteco.com?subject=Website Inquiry"
                             className="ml-auto text-sm font-bold text-blue-400 hover:text-blue-300 flex items-center gap-1"
-                            onClick={() => trackEmailClick()}
-                        >
+              onClick={() => trackEmailClick()}
+            >
                             Email Now <ArrowRight className="w-4 h-4" />
-                        </a>
-                    </div>
+            </a>
+          </div>
                 </div>
 
                 <div className="pt-8 border-t border-white/10">
@@ -150,79 +150,79 @@ const CallToAction = () => {
                         <p className="text-white/60 text-sm">
                             Fill in the details below. We'll review your needs and get back to you within 24 hours with a plan.
                         </p>
-                    </div>
+        </div>
 
                     <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div className="space-y-2">
                             <Label htmlFor="name" className="text-white/90 font-medium">Name</Label>
-                            <Input
-                            id="name"
-                            {...register("name")}
+                <Input
+                  id="name"
+                  {...register("name")}
                             className="bg-white/90 border-transparent focus:border-accent focus:ring-accent text-black placeholder-gray-500 h-11"
                             placeholder="John Smith"
-                            />
+                />
                             {errors.name && <p className="text-red-300 text-xs mt-1 font-medium">{errors.name.message}</p>}
-                        </div>
+              </div>
                         <div className="space-y-2">
                             <Label htmlFor="email" className="text-white/90 font-medium">Email</Label>
-                            <Input
-                            id="email"
-                            type="email"
-                            {...register("email")}
+                <Input
+                  id="email"
+                  type="email"
+                  {...register("email")}
                             className="bg-white/90 border-transparent focus:border-accent focus:ring-accent text-black placeholder-gray-500 h-11"
                             placeholder="john@example.com"
-                            />
+                />
                             {errors.email && <p className="text-red-300 text-xs mt-1 font-medium">{errors.email.message}</p>}
-                        </div>
-                        </div>
+              </div>
+            </div>
                         
                         <div className="space-y-2">
                         <Label htmlFor="trade" className="text-white/90 font-medium">Trade / Business Type</Label>
-                        <Input
-                            id="trade"
-                            {...register("trade")}
+              <Input
+                id="trade"
+                {...register("trade")}
                             className="bg-white/90 border-transparent focus:border-accent focus:ring-accent text-black placeholder-gray-500 h-11"
-                            placeholder="e.g. Plumber, Electrician, Builder"
-                        />
+                placeholder="e.g. Plumber, Electrician, Builder"
+              />
                         {errors.trade && <p className="text-red-300 text-xs mt-1 font-medium">{errors.trade.message}</p>}
-                        </div>
+            </div>
                         
                         <div className="space-y-2">
                         <Label htmlFor="message" className="text-white/90 font-medium">How can we help?</Label>
-                        <Textarea
-                            id="message"
-                            {...register("message")}
+              <Textarea
+                id="message"
+                {...register("message")}
                             className="bg-white/90 border-transparent focus:border-accent focus:ring-accent text-black placeholder-gray-500 min-h-[120px] resize-none"
                             placeholder="Tell us a bit about what you need..."
-                        />
+              />
                         {errors.message && <p className="text-red-300 text-xs mt-1 font-medium">{errors.message.message}</p>}
-                        </div>
+            </div>
                         
-                        <Button
-                        type="submit"
-                        disabled={isSubmitting}
+            <Button
+              type="submit"
+              disabled={isSubmitting}
                         className="w-full bg-accent hover:bg-accent/90 text-accent-foreground h-14 text-lg font-bold shadow-lg shadow-accent/20 transition-all hover:scale-[1.02]"
-                        >
+            >
                         {isSubmitting ? "Sending Request..." : "Get My Free Quote"}
                         <Send className="ml-2 w-5 h-5" />
-                        </Button>
+            </Button>
                         
                         <p className="text-center text-xs text-white/40">
                         Zero spam. Your data is secure.
                         </p>
 
-                        {submitMessage && (
+            {submitMessage && (
                         <div className={`p-4 rounded-xl mt-4 animate-in fade-in slide-in-from-bottom-2 ${submitMessage.includes('Thank you') ? 'bg-green-500/20 text-green-100 border border-green-500/30' : 'bg-red-500/20 text-red-100 border border-red-500/30'}`}>
                             <p className="text-center text-sm font-medium flex items-center justify-center gap-2">
                                 {submitMessage.includes('Thank you') && <CheckCircle2 className="w-4 h-4" />}
-                                {submitMessage}
-                            </p>
+                {submitMessage}
+              </p>
                         </div>
-                        )}
-                    </form>
-                 </div>
-            </div>
+            )}
+          </form>
+        </div>
+          </div>
 
         </div>
       </div>

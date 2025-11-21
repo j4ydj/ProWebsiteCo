@@ -45,13 +45,13 @@ const Testimonials = () => {
             <h2 className="text-4xl md:text-5xl font-black text-foreground mb-6 tracking-tight">
               Real Results for <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/60">Real Trades</span>
-            </h2>
+          </h2>
           </div>
           <div className="lg:text-right">
             <p className="text-xl text-muted-foreground font-light leading-relaxed">
                We don't just build websites; we build assets that pay for themselves. 
                See what our partners are saying about their growth.
-            </p>
+          </p>
           </div>
         </div>
 
@@ -69,7 +69,7 @@ const Testimonials = () => {
                 </div>
                 <Quote className="w-8 h-8 text-slate-200 group-hover:text-accent/30 transition-colors" />
               </div>
-              
+
               <p className="text-lg text-foreground leading-relaxed font-medium mb-8 min-h-[80px]">
                 "{testimonial.text}"
               </p>
@@ -83,9 +83,9 @@ const Testimonials = () => {
                         <div className="font-bold text-foreground">{testimonial.name}</div>
                         <div className="text-sm text-muted-foreground flex items-center gap-1">
                             {testimonial.trade} <span className="text-slate-300">•</span> {testimonial.location}
-                        </div>
+                  </div>
                     </div>
-                </div>
+                  </div>
                 
                 <div className="hidden sm:flex items-center gap-1.5 px-3 py-1 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 rounded-full text-xs font-bold uppercase tracking-wide">
                     <CheckCircle2 className="w-3.5 h-3.5" />
@@ -104,7 +104,7 @@ const Testimonials = () => {
                     ))}
                  </div>
                  <span className="text-sm font-medium text-muted-foreground ml-2">Join 150+ happy tradespeople</span>
-            </div>
+          </div>
         </div>
       </div>
     </section>
