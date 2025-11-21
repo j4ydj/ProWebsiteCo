@@ -7,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { MessageCircle, Phone } from "lucide-react";
 
 const faqs = [
   {
@@ -53,23 +54,14 @@ const faqs = [
 
 const FAQ = () => {
   return (
-    <section id="faq" className="py-20 bg-background">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="faq" className="py-24 bg-slate-50 dark:bg-background">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="flex justify-center">
-            <Image
-              src="/assets/prowebsitecologo.svg"
-              alt="Pro Website Co"
-              width={500}
-              height={250}
-              className="h-auto w-auto max-w-xs"
-            />
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Frequently Asked Questions
+          <h2 className="text-3xl md:text-4xl font-black text-foreground mb-4 tracking-tight">
+            Common Questions
           </h2>
-          <p className="text-xl text-muted-foreground">
-            Everything you need to know about getting your professional trade website
+          <p className="text-lg text-muted-foreground">
+            Everything you need to know about the process.
           </p>
         </div>
 
@@ -78,40 +70,38 @@ const FAQ = () => {
             <AccordionItem 
               key={index} 
               value={`item-${index}`}
-              className="bg-card rounded-lg border border-border shadow-card hover:shadow-elegant transition-all duration-300"
+              className="bg-white dark:bg-card rounded-xl border border-slate-200 dark:border-white/10 px-2"
             >
-              <AccordionTrigger className="px-6 py-4 text-left hover:no-underline text-card-foreground font-semibold">
+              <AccordionTrigger className="px-4 py-5 text-left hover:no-underline text-foreground font-semibold text-lg">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="px-6 pb-4 text-muted-foreground leading-relaxed">
+              <AccordionContent className="px-4 pb-6 text-muted-foreground leading-relaxed">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
 
-        <div className="text-center mt-12">
-          <p className="text-muted-foreground mb-4">
-            Still have questions?
+        <div className="text-center mt-16 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl p-8">
+          <h3 className="text-xl font-bold text-foreground mb-2">Still have questions?</h3>
+          <p className="text-muted-foreground mb-6">
+            We're happy to chat about your specific needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="tel:07808822974"
-              className="inline-flex items-center justify-center px-6 py-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/90 transition-colors font-medium min-h-[48px]"
-              onClick={() => {
-                if (typeof window !== 'undefined' && (window as any).gtag) {
-                  (window as any).gtag('event', 'phone_click', { event_category: 'Contact' });
-                }
-              }}
+              className="inline-flex items-center justify-center px-6 py-3 bg-slate-100 dark:bg-white/10 text-foreground rounded-lg hover:bg-slate-200 transition-colors font-bold"
             >
-              Call us: 07808 822974
+              <Phone className="w-4 h-4 mr-2" />
+              07808 822974
             </a>
             <a 
-              href="https://wa.me/447808822974?text=Hi, I have a question about getting a website for my trade business"
+              href="https://wa.me/447808822974"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium min-h-[48px]"
+              className="inline-flex items-center justify-center px-6 py-3 bg-[#25D366] text-white rounded-lg hover:bg-[#20bd5a] transition-colors font-bold"
             >
+              <MessageCircle className="w-4 h-4 mr-2" />
               WhatsApp Chat
             </a>
           </div>

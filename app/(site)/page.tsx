@@ -11,6 +11,7 @@ import FAQ from "@/components/sections/FAQ";
 import About from "@/components/sections/About";
 import CallToAction from "@/components/sections/CallToAction";
 import Footer from "@/components/layout/Footer";
+import { MobileConversionBar } from "@/components/layout/MobileConversionBar";
 
 export default function HomePage() {
   return (
@@ -30,6 +31,7 @@ export default function HomePage() {
         <CallToAction />
       </main>
       <Footer />
+      <MobileConversionBar />
     </div>
   );
 }

@@ -1,108 +1,99 @@
 import { Button } from "@/components/ui/button";
-import { Users, Award, Clock } from "lucide-react";
+import { Users, Award, Clock, MapPin } from "lucide-react";
 
 const stats = [
   {
-    icon: Users,
     number: "150+",
     label: "Trades Served",
-    description: "Across all UK regions"
   },
   {
-    icon: Award,
-    number: "4.9★",
-    label: "Average Rating", 
-    description: "From happy customers"
+    number: "4.9/5",
+    label: "Client Rating", 
   },
   {
-    icon: Clock,
-    number: "48hr",
+    number: "7 Days",
     label: "Average Delivery",
-    description: "From brief to live site"
   }
 ];
 
 const About = () => {
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-24 bg-white dark:bg-neutral-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Helping UK Trades Stand Out Online Since 2019
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
+          
+          {/* Left Column: Story */}
+          <div className="lg:col-span-7">
+            <span className="text-primary font-bold tracking-wider uppercase text-sm mb-4 block">Our Mission</span>
+            <h2 className="text-4xl md:text-5xl font-black text-foreground mb-8 tracking-tight leading-tight">
+              We Built Pro Website Co to End the <span className="text-primary">"Template Trap"</span>
             </h2>
-            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+            
+            <div className="space-y-6 text-lg text-muted-foreground font-light leading-relaxed">
               <p>
-                We started Pro Website Co because we saw too many skilled tradespeople 
-                struggling with generic, template-based websites that didn't represent 
-                the quality of their work.
+                In 2019, we noticed a pattern. Skilled tradespeople were paying thousands for websites that looked exactly like their competitors'. Same stock photos, same generic text, same poor results.
               </p>
               <p>
-                Every trade is different. A plumber's website shouldn't look like an 
-                electrician's, and a decorator's site needs to showcase creativity in 
-                a way that a builder's doesn't. That's why we design every single 
-                website from scratch.
+                We believe a high-quality trade business deserves a high-quality digital presence. A plumber's website needs to function differently than a roofer's. A luxury builder needs a different aesthetic than an emergency locksmith.
               </p>
-              <p>
-                <strong className="text-foreground">Our commitment is simple:</strong> No two websites we create 
-                will ever look the same. Your business is unique, and your website 
-                should be too.
-              </p>
-            </div>
-          </div>
-
-          <div className="space-y-8">
-            <div className="bg-card rounded-xl p-8 shadow-card border border-border">
-              <h3 className="text-xl font-semibold text-card-foreground mb-6">
-                Why Tradespeople Trust Us
-              </h3>
-              <div className="space-y-6">
-                <div className="flex items-start">
-                  <div className="bg-primary/10 rounded-lg p-2 mr-4 mt-1">
-                    <Award className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-card-foreground mb-1">UK Trade Specialists</h4>
-                    <p className="text-sm text-muted-foreground">We understand UK customer behaviour and local search</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="bg-accent/10 rounded-lg p-2 mr-4 mt-1">
-                    <Users className="w-5 h-5 text-accent" />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-card-foreground mb-1">No Tech Headaches</h4>
-                    <p className="text-sm text-muted-foreground">We handle everything so you can focus on your trade</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="bg-primary/10 rounded-lg p-2 mr-4 mt-1">
-                    <Clock className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-card-foreground mb-1">Quick Turnaround</h4>
-                    <p className="text-sm text-muted-foreground">Most sites live within one week</p>
-                  </div>
-                </div>
+              <div className="pl-6 border-l-4 border-accent my-8">
+                <p className="text-xl font-medium text-foreground italic">
+                  "Our commitment is absolute: No templates. No generic copy. Just 100% custom design engineered for your specific trade."
+                </p>
               </div>
+              <p>
+                 We stripped away the agency fluff—the expensive meetings, the confusing jargon, and the slow timelines—to focus on what matters: building beautiful, high-converting websites that help you win better work.
+              </p>
             </div>
 
-            <div className="grid grid-cols-3 gap-6">
-              {stats.map((stat, index) => {
-                const IconComponent = stat.icon;
-                return (
-                  <div key={index} className="text-center">
-                    <div className="bg-gradient-primary rounded-lg w-12 h-12 flex items-center justify-center mx-auto mb-3">
-                      <IconComponent className="w-6 h-6 text-primary-foreground" />
-                    </div>
-                    <div className="text-2xl font-bold text-foreground">{stat.number}</div>
-                    <div className="text-sm font-medium text-card-foreground">{stat.label}</div>
-                    <div className="text-xs text-muted-foreground">{stat.description}</div>
-                  </div>
-                );
-              })}
+            <div className="mt-10 flex items-center gap-6">
+               <div className="flex items-center gap-2">
+                  <MapPin className="w-5 h-5 text-primary" />
+                  <span className="font-bold text-foreground">London Based</span>
+               </div>
+               <div className="w-1 h-1 bg-slate-300 rounded-full" />
+               <div className="flex items-center gap-2">
+                  <Users className="w-5 h-5 text-primary" />
+                  <span className="font-bold text-foreground">UK Team Only</span>
+               </div>
             </div>
           </div>
+
+          {/* Right Column: Stats & Trust */}
+          <div className="lg:col-span-5 space-y-8">
+            <div className="bg-slate-50 dark:bg-neutral-900 rounded-3xl p-8 border border-slate-100 dark:border-white/5 shadow-lg">
+              <h3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
+                 <Award className="w-5 h-5 text-accent" />
+                 Why Trades Trust Us
+              </h3>
+              <ul className="space-y-4">
+                 {[
+                    "We speak 'Trade', not 'Tech'",
+                    "Specialists in Local SEO for UK Areas",
+                    "Direct access to your designer",
+                    "No hidden monthly maintenance fees",
+                    "Full ownership of your website"
+                 ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                       <div className="w-5 h-5 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center shrink-0 mt-0.5">
+                          <div className="w-2 h-2 rounded-full bg-green-600" />
+                       </div>
+                       <span className="text-muted-foreground font-medium">{item}</span>
+                    </li>
+                 ))}
+              </ul>
+            </div>
+
+            <div className="grid grid-cols-3 gap-4">
+               {stats.map((stat, index) => (
+                  <div key={index} className="bg-white dark:bg-card rounded-2xl p-4 border border-slate-100 dark:border-white/5 shadow-sm text-center">
+                     <div className="text-2xl md:text-3xl font-black text-primary mb-1">{stat.number}</div>
+                     <div className="text-xs font-bold uppercase tracking-wider text-muted-foreground">{stat.label}</div>
+                  </div>
+               ))}
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

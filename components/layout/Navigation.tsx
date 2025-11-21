@@ -57,9 +57,9 @@ const Navigation = () => {
               variant="cta"
               size="sm"
               onClick={() => scrollToSection('#contact')}
-              className="min-h-[48px]"
+              className="min-h-[48px] px-8 text-base font-bold shadow-lg shadow-accent/20 hover:shadow-accent/40 transition-all"
             >
-              Contact Us
+              Get a Quote
             </Button>
           </div>
 

@@ -3,50 +3,48 @@ import { Shield, Users, Clock, Award } from "lucide-react";
 const trustSignals = [
   {
     icon: Clock,
-    text: "5+ Years Serving UK Trades",
-    subtext: "Established & trusted"
+    text: "5+ Years Experience",
+    subtext: "Serving UK Trades"
   },
   {
     icon: Users,
     text: "150+ Happy Clients",
-    subtext: "Proven track record"
+    subtext: "5-Star Rated Service"
   },
   {
     icon: Shield,
     text: "Money-Back Guarantee",
-    subtext: "Risk-free service"
+    subtext: "Risk-Free Investment"
   },
   {
     icon: Award,
-    text: "No Templates Used",
-    subtext: "100% custom designs"
+    text: "Bespoke Design",
+    subtext: "No Generic Templates"
   }
 ];
 
 const TrustSignals = () => {
   return (
-    <section className="py-12 bg-muted/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <section className="relative z-20 -mt-12 px-4 pb-12">
+      <div className="mx-auto max-w-6xl rounded-2xl bg-white px-6 py-10 shadow-elegant border border-border/40 sm:px-10">
+        <div className="grid grid-cols-1 gap-y-8 sm:grid-cols-2 md:grid-cols-4 md:gap-x-8 md:gap-y-0 divide-y md:divide-y-0 md:divide-x divide-border/60">
           {trustSignals.map((signal, index) => {
             const IconComponent = signal.icon;
             return (
               <div 
                 key={index}
-                className="flex items-center justify-center text-center p-4 bg-background/60 rounded-lg border border-border/50"
+                className="flex flex-col items-center justify-center text-center group pt-8 first:pt-0 md:pt-0 px-4"
               >
-                <div className="flex items-center space-x-3">
-                  <div className="bg-accent/10 rounded-full p-3 flex-shrink-0">
-                    <IconComponent className="w-8 h-8 text-accent" />
-                  </div>
-                  <div className="text-left">
-                    <div className="font-semibold text-foreground text-sm">
-                      {signal.text}
-                    </div>
-                    <div className="text-xs text-muted-foreground">
-                      {signal.subtext}
-                    </div>
-                  </div>
+                <div className="mb-4 rounded-full bg-accent/10 p-3 transition-transform duration-300 group-hover:scale-110 group-hover:bg-accent/20">
+                  <IconComponent className="h-6 w-6 text-accent" />
+                </div>
+                <div className="space-y-1">
+                  <h3 className="font-bold text-foreground text-base">
+                    {signal.text}
+                  </h3>
+                  <p className="text-sm font-medium text-muted-foreground">
+                    {signal.subtext}
+                  </p>
                 </div>
               </div>
             );

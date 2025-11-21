@@ -1,94 +1,122 @@
 'use client';
 
-import { ArrowRight, Check, Shield } from "lucide-react";
-
+import { ArrowRight, Check, Shield, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { contentService } from "@/lib/services/contentService";
-import { trackPaymentLinkClick } from "@/lib/utils/tracking";
 
 const features = contentService.getPricingFeatures();
 const pricing = contentService.getPricingContent();
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="py-20 bg-muted/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="pricing" className="py-24 bg-background relative overflow-hidden">
+      {/* Ambient background */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/5 rounded-full blur-[120px] pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Simple, Transparent Pricing
+          <h2 className="text-4xl md:text-5xl font-black text-foreground mb-6 tracking-tight">
+            Simple, Transparent <span className="text-primary">Pricing</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            No hidden fees, no surprises. One transparent setup cost covers a fully managed launch, hosting, and support to keep your site running smoothly.
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-light">
+            One package. Everything you need. No hidden monthly fees.
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-card rounded-2xl shadow-elegant border border-border overflow-hidden">
-            <div className="bg-gradient-primary p-8 text-center text-primary-foreground">
-              <h3 className="text-2xl font-bold mb-2">Professional Trade Website</h3>
-              <p className="text-primary-foreground/90">Everything you need to get more work</p>
-            </div>
+        <div className="max-w-lg mx-auto lg:max-w-4xl">
+          <div className="relative group">
+            {/* Glow effect */}
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-primary via-accent to-primary rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-1000" />
             
-            <div className="p-8 lg:p-12">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                <div>
-                  <div className="mb-8">
-                    <div className="flex items-baseline mb-4">
-                      <div className="flex flex-col">
-                        <div className="flex items-baseline">
-                          <span className="text-2xl text-muted-foreground line-through mr-3">£1,149</span>
-                          <span className="text-5xl font-bold text-foreground">£899</span>
-                          <span className="text-xl text-muted-foreground ml-2">one-time</span>
-                        </div>
-                        <span className="text-sm text-accent font-medium mt-1">{pricing.limitedOffer}</span>
+            <div className="relative bg-card rounded-2xl border border-border shadow-2xl overflow-hidden">
+              <div className="grid grid-cols-1 lg:grid-cols-5">
+                
+                {/* Left Panel: Value Prop & Price */}
+                <div className="lg:col-span-3 p-8 lg:p-12 bg-slate-50 dark:bg-slate-900/50 flex flex-col justify-between relative">
+                   <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent" />
+                   
+                   <div>
+                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-bold uppercase tracking-wider mb-6">
+                        <Star className="w-3 h-3 fill-current" /> Most Popular Choice
                       </div>
-                    </div>
-                    <p className="text-muted-foreground mt-4">
-                      Includes 2 full years of premium hosting, SSL security, updates, and priority support. After 2 years, keep your site running for just £99/year (cancel anytime, or take full ownership).
-                    </p>
-                    <div className="bg-accent/10 rounded-lg p-4 mt-4 border border-accent/20">
-                      <div className="flex items-center text-accent font-semibold text-sm mb-2">
-                        <Shield className="w-4 h-4 mr-2" />
-                        Risk-Free Design Process
+                      <h3 className="text-3xl font-bold text-foreground mb-2">Complete Trade Package</h3>
+                      <p className="text-muted-foreground mb-8">The all-in-one solution designed specifically to get tradespeople more work.</p>
+                      
+                      <div className="flex items-baseline gap-2 mb-1">
+                        <span className="text-5xl lg:text-6xl font-black text-foreground tracking-tight">£899</span>
+                        <span className="text-xl text-muted-foreground font-medium">one-time</span>
                       </div>
-                      <p className="text-sm text-muted-foreground">{pricing.guarantee}</p>
-                    </div>
-                  </div>
+                      <p className="text-sm text-green-600 font-medium mb-8 flex items-center gap-1">
+                        <span className="line-through text-muted-foreground/60 opacity-70">£1,149</span> 
+                        Save £250 this month
+                      </p>
 
-                <div className="space-y-4">
-                  <a href="#contact">
-                    <Button variant="cta" size="xl" className="w-full group">
-                      Get Started Now
-                      <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-                    </Button>
-                  </a>
-                  <p className="text-center text-sm text-muted-foreground">
-                    💳 Pay only after you approve your design
-                  </p>
-                </div>
+                      <div className="bg-white dark:bg-slate-800 rounded-xl p-4 border border-border/60 shadow-sm">
+                         <div className="flex items-start gap-3">
+                            <div className="bg-primary/10 p-2 rounded-lg shrink-0">
+                                <Shield className="w-5 h-5 text-primary" />
+                            </div>
+                            <div>
+                                <p className="font-bold text-foreground text-sm mb-1">Zero Risk Guarantee</p>
+                                <p className="text-xs text-muted-foreground leading-relaxed">
+                                    We design your site first. You only pay the invoice when you are 100% happy with the design.
+                                </p>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+
+                   <div className="mt-8 lg:mt-0 pt-8 lg:pt-0">
+                      <Button asChild size="xl" className="w-full bg-primary hover:bg-primary/90 text-lg font-bold shadow-lg shadow-primary/20">
+                        <a href="#contact">
+                            Get Started Now <ArrowRight className="ml-2 w-5 h-5" />
+                        </a>
+                      </Button>
+                      <p className="text-center text-xs text-muted-foreground mt-3">
+                        No credit card required upfront.
+                      </p>
+                   </div>
                 </div>
 
-                <div>
-                  <h4 className="text-xl font-semibold text-card-foreground mb-6">
-                    Everything Included:
-                  </h4>
-                  <div className="space-y-3">
-                    {features.map((feature, index) => (
-                      <div key={index} className="flex items-start">
-                        <div className="bg-accent/10 rounded-full p-1 mr-3 mt-0.5 flex-shrink-0">
-                          <Check className="w-4 h-4 text-accent" />
-                        </div>
-                        <span className="text-card-foreground">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
+                {/* Right Panel: Feature List */}
+                <div className="lg:col-span-2 p-8 lg:p-12 bg-white dark:bg-card border-t lg:border-t-0 lg:border-l border-border">
+                   <h4 className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-6">What's Included</h4>
+                   <ul className="space-y-4">
+                      <li className="flex items-start gap-3 group/item">
+                         <div className="shrink-0 w-6 h-6 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center mt-0.5 group-hover/item:bg-green-500 group-hover/item:text-white transition-colors duration-300">
+                            <Check className="w-3.5 h-3.5 text-green-600 dark:text-green-400 group-hover/item:text-white transition-colors" />
+                         </div>
+                         <span className="text-sm text-foreground/80 group-hover/item:text-foreground transition-colors font-bold">We Write All Content For You</span>
+                      </li>
+                      <li className="flex items-start gap-3 group/item">
+                         <div className="shrink-0 w-6 h-6 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center mt-0.5 group-hover/item:bg-green-500 group-hover/item:text-white transition-colors duration-300">
+                            <Check className="w-3.5 h-3.5 text-green-600 dark:text-green-400 group-hover/item:text-white transition-colors" />
+                         </div>
+                         <span className="text-sm text-foreground/80 group-hover/item:text-foreground transition-colors font-bold">Google Business Profile Setup</span>
+                      </li>
+                      {features.map((feature, index) => (
+                        <li key={index} className="flex items-start gap-3 group/item">
+                           <div className="shrink-0 w-6 h-6 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center mt-0.5 group-hover/item:bg-green-500 group-hover/item:text-white transition-colors duration-300">
+                              <Check className="w-3.5 h-3.5 text-green-600 dark:text-green-400 group-hover/item:text-white transition-colors" />
+                           </div>
+                           <span className="text-sm text-foreground/80 group-hover/item:text-foreground transition-colors">{feature}</span>
+                        </li>
+                      ))}
+                   </ul>
+                   
+                   <div className="mt-10 pt-8 border-t border-border">
+                      <h4 className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-4">After Launch</h4>
+                      <p className="text-sm text-muted-foreground mb-2">
+                        <span className="font-bold text-foreground">2 Years Free Hosting</span> & Support included.
+                      </p>
+                      <p className="text-xs text-muted-foreground">
+                        Then just £99/year (optional). Cancel anytime.
+                      </p>
+                   </div>
                 </div>
+
               </div>
             </div>
-          </div>
-
-          <div className="text-center mt-8">
-            <p className="text-muted-foreground">{pricing.benefitHighlight}</p>
           </div>
         </div>
       </div>
